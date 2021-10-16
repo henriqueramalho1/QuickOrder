@@ -13,13 +13,13 @@ QuickOrder::~QuickOrder()
 
 void QuickOrder::execute()
 {
-    while(!close())
+    while(open())
     {
         graphicsManager.update();
     }
 }
 
-bool QuickOrder::close()
+bool QuickOrder::open()
 {
-    graphicsManager.isWindowOpen();
+    return graphicsManager.isWindowOpen();
 }

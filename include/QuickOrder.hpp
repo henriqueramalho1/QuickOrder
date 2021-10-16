@@ -14,5 +14,5 @@ public:
     QuickOrder();
     ~QuickOrder();
     void execute();
-    bool close();
+    bool open();
 };

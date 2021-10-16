@@ -30,7 +30,7 @@ all: objFolder ./bin/$(PROJECT_NAME)
 				@ echo 'Finished buiding binary: $@'
 				@ echo ' '
 
-./objects/%.o: ./source/%.cpp ./include/%.h
+./objects/%.o: ./source/%.cpp ./include/%.hpp
 				@ echo 'Building target using G++ compiler: $<'
 				$(CC) -o $@ $< $(CC_FLAGS)
 				@ echo ' '
