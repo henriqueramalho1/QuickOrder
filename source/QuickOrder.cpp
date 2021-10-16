@@ -1,7 +1,8 @@
 #include "QuickOrder.hpp"
 
 QuickOrder::QuickOrder():
-    graphicsManager()
+    graphicsManager(),
+    stateManager()
 {
 
 }
