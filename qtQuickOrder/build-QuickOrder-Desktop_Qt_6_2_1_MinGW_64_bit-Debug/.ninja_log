@@ -1,0 +1,9 @@
+# ninja log v5
+1	732	6595654015947061	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+1	732	6595654015947061	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+1	732	6595654015947061	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+1	732	6595654015947061	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+733	2716	6595654036948618	CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj	5b7e49fb675f3b74
+747	3183	6595654041622680	CMakeFiles/QuickOrder.dir/main.cpp.obj	a0be5f12a8948893
+739	3201	6595654041822606	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	b9aca069641d6e9d
+3211	3684	6595654046569948	QuickOrder.exe	a36a1b423cdd3d29

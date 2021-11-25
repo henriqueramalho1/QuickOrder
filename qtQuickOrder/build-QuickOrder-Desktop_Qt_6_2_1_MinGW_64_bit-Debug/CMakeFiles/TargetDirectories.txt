@@ -1,0 +1,5 @@
+D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/QuickOrder.dir
+D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/QuickOrder_autogen_timestamp_deps.dir
+D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/QuickOrder_autogen.dir
