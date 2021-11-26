@@ -13,6 +13,102 @@
   <property name="windowTitle">
    <string>MainMenu</string>
   </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>751</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="registerProductButton">
+      <property name="text">
+       <string>Cadastrar prato</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addCostumerButton">
+      <property name="text">
+       <string>Adicionar consumidor</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="orderButton">
+      <property name="text">
+       <string>Efetuar pedido</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="closeCostumerButton">
+      <property name="text">
+       <string>Fechar conta</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="orderStatusButton">
+      <property name="text">
+       <string>Verificar status de pedido</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelOrderButton">
+      <property name="text">
+       <string>Cancelar pedido</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="text">
+       <string>Atualizar status do pedido</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updateTableStatusButton">
+      <property name="text">
+       <string>Atualizar status da mesa</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updateInventoryButton">
+      <property name="text">
+       <string>Atualizar estoque</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="showOrdersButton">
+      <property name="text">
+       <string>Exibir pedidos</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="checkTableStatusButton">
+      <property name="text">
+       <string>Verificar status das mesas</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="backButton">
+      <property name="text">
+       <string>Sair</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections/>
