@@ -18,6 +18,10 @@ set(PROJECT_SOURCES
         main.cpp
         mainmenu.cpp
         mainmenu.h
+        costumer.h costumer.cpp
+        ingredient.h ingredient.cpp
+        product.h product.cpp
+        table.h table.cpp
         mainmenu.ui
 )
 
