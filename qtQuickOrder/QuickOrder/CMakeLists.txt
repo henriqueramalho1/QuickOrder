@@ -22,7 +22,10 @@ set(PROJECT_SOURCES
         ingredient.h ingredient.cpp
         product.h product.cpp
         table.h table.cpp
+        menu.h menu.cpp
+        productregistermenu.h productregistermenu.cpp
         mainmenu.ui
+        productregistermenu.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
