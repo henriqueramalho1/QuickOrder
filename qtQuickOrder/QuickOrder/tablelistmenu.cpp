@@ -13,9 +13,10 @@ TableListMenu::TableListMenu(QWidget* parent):
 
 TableListMenu::~TableListMenu()
 {
-    for(auto it = tableList.begin(); it != tableList.end(); it++)
+    for(auto it = tableList.begin(); it != tableList.end();)
     {
         Table* table = *it;
+        std::cout << "Deletando " << table->getName() <<std::endl;
         tableList.erase(it);
     }
 
@@ -37,6 +38,7 @@ void TableListMenu::on_addPushButton_clicked()
 
     Table* table = new Table(tableCount, textQ.toStdString());
     tableList.push_back(table);
+    std::cout << "Criando "<< textQ.toStdString() << " com id " << table->getId() <<std::endl;
 
     ui->listWidget->addItem(textQ);
     QColor red;

@@ -25,6 +25,7 @@ private slots:
     void on_registerProductButton_clicked();
 
     void on_updateTableStatusButton_clicked();
+    void on_addCostumerButton_clicked();
 
     void on_backButton_clicked();
 

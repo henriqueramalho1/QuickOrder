@@ -28,6 +28,8 @@ set(PROJECT_SOURCES
         mainmenu.ui
         productregistermenu.ui
         tablelistmenu.ui
+        costumerregistermenu.ui
+        costumerregistermenu.h costumerregistermenu.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

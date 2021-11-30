@@ -30,10 +30,9 @@ void ProductRegisterMenu::on_registerButton_clicked()
     close();
 }
 
-
-
 void ProductRegisterMenu::on_backButton_clicked()
 {
     close();
 }
+
 
