@@ -388,6 +388,8 @@ QuickOrder_autogen/timestamp: \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/CMakeLists.txt \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumer.cpp \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumer.h \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumerregistermenu.cpp \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumerregistermenu.h \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.cpp \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.h \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/main.cpp \
@@ -405,6 +407,7 @@ QuickOrder_autogen/timestamp: \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/3.21.1/CMakeSystem.cmake \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/moc_predefs.h \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumerregistermenu.ui \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.ui \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -245,6 +245,12 @@
 			null
 		],
 		[
+			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumerregistermenu.h",
+			"MU",
+			"EWIEGA46WW/moc_costumerregistermenu.cpp",
+			null
+		],
+		[
 			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.h",
 			"MU",
 			"EWIEGA46WW/moc_ingredient.cpp",
@@ -347,6 +353,11 @@
 	[
 		[
 			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumer.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumerregistermenu.cpp",
 			"MU",
 			null
 		],

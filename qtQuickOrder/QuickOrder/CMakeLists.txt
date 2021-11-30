@@ -26,6 +26,8 @@ set(PROJECT_SOURCES
         productregistermenu.h productregistermenu.cpp
         mainmenu.ui
         productregistermenu.ui
+        costumerregistermenu.ui
+        costumerregistermenu.h costumerregistermenu.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
