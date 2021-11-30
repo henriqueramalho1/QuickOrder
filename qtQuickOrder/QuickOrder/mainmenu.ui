@@ -13,13 +13,13 @@
   <property name="windowTitle">
    <string>MainMenu</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>-10</y>
-     <width>751</width>
-     <height>611</height>
+     <x>70</x>
+     <y>20</y>
+     <width>661</width>
+     <height>551</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">

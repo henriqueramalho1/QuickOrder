@@ -7,7 +7,7 @@ class Menu : public QWidget
 {
     Q_OBJECT
 public:
-    Menu(QWidget *parent = nullptr, QWidget *caller = nullptr);
+    Menu(QWidget *parent = nullptr);
     virtual ~Menu();
 };
 

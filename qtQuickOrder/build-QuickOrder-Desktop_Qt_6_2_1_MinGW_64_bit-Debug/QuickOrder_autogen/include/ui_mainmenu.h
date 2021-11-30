@@ -20,7 +20,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainMenu
 {
 public:
-    QWidget *verticalLayoutWidget;
+    QWidget *widget;
     QVBoxLayout *verticalLayout;
     QPushButton *registerProductButton;
     QPushButton *addCostumerButton;
@@ -40,68 +40,68 @@ public:
         if (MainMenu->objectName().isEmpty())
             MainMenu->setObjectName(QString::fromUtf8("MainMenu"));
         MainMenu->resize(800, 600);
-        verticalLayoutWidget = new QWidget(MainMenu);
-        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(0, -10, 751, 611));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        widget = new QWidget(MainMenu);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(70, 20, 661, 551));
+        verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        registerProductButton = new QPushButton(verticalLayoutWidget);
+        registerProductButton = new QPushButton(widget);
         registerProductButton->setObjectName(QString::fromUtf8("registerProductButton"));
 
         verticalLayout->addWidget(registerProductButton);
 
-        addCostumerButton = new QPushButton(verticalLayoutWidget);
+        addCostumerButton = new QPushButton(widget);
         addCostumerButton->setObjectName(QString::fromUtf8("addCostumerButton"));
 
         verticalLayout->addWidget(addCostumerButton);
 
-        orderButton = new QPushButton(verticalLayoutWidget);
+        orderButton = new QPushButton(widget);
         orderButton->setObjectName(QString::fromUtf8("orderButton"));
 
         verticalLayout->addWidget(orderButton);
 
-        closeCostumerButton = new QPushButton(verticalLayoutWidget);
+        closeCostumerButton = new QPushButton(widget);
         closeCostumerButton->setObjectName(QString::fromUtf8("closeCostumerButton"));
 
         verticalLayout->addWidget(closeCostumerButton);
 
-        orderStatusButton = new QPushButton(verticalLayoutWidget);
+        orderStatusButton = new QPushButton(widget);
         orderStatusButton->setObjectName(QString::fromUtf8("orderStatusButton"));
 
         verticalLayout->addWidget(orderStatusButton);
 
-        cancelOrderButton = new QPushButton(verticalLayoutWidget);
+        cancelOrderButton = new QPushButton(widget);
         cancelOrderButton->setObjectName(QString::fromUtf8("cancelOrderButton"));
 
         verticalLayout->addWidget(cancelOrderButton);
 
-        pushButton_7 = new QPushButton(verticalLayoutWidget);
+        pushButton_7 = new QPushButton(widget);
         pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
 
         verticalLayout->addWidget(pushButton_7);
 
-        updateTableStatusButton = new QPushButton(verticalLayoutWidget);
+        updateTableStatusButton = new QPushButton(widget);
         updateTableStatusButton->setObjectName(QString::fromUtf8("updateTableStatusButton"));
 
         verticalLayout->addWidget(updateTableStatusButton);
 
-        updateInventoryButton = new QPushButton(verticalLayoutWidget);
+        updateInventoryButton = new QPushButton(widget);
         updateInventoryButton->setObjectName(QString::fromUtf8("updateInventoryButton"));
 
         verticalLayout->addWidget(updateInventoryButton);
 
-        showOrdersButton = new QPushButton(verticalLayoutWidget);
+        showOrdersButton = new QPushButton(widget);
         showOrdersButton->setObjectName(QString::fromUtf8("showOrdersButton"));
 
         verticalLayout->addWidget(showOrdersButton);
 
-        checkTableStatusButton = new QPushButton(verticalLayoutWidget);
+        checkTableStatusButton = new QPushButton(widget);
         checkTableStatusButton->setObjectName(QString::fromUtf8("checkTableStatusButton"));
 
         verticalLayout->addWidget(checkTableStatusButton);
 
-        backButton = new QPushButton(verticalLayoutWidget);
+        backButton = new QPushButton(widget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         verticalLayout->addWidget(backButton);

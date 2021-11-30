@@ -1,6 +1,6 @@
 #include "menu.h"
 
-Menu::Menu(QWidget *parent, QWidget *caller)
+Menu::Menu(QWidget *parent)
     : QWidget(parent)
 {
     setAttribute(Qt::WA_QuitOnClose, false);

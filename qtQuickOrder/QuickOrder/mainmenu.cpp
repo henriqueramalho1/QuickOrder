@@ -1,6 +1,7 @@
 #include "mainmenu.h"
 #include "./ui_mainmenu.h"
 #include "productregistermenu.h"
+#include "tablelistmenu.h"
 #include <QEventLoop>
 
 MainMenu::MainMenu(QWidget *parent): Menu(parent), ui(new Ui::MainMenu){
@@ -17,7 +18,7 @@ MainMenu::~MainMenu(){
 void MainMenu::on_registerProductButton_clicked(){
     hide();
 
-    productRegisterMenu = new ProductRegisterMenu(nullptr, this);
+    productRegisterMenu = new ProductRegisterMenu(nullptr);
     productRegisterMenu->show();
 
     QEventLoop loop;
@@ -29,5 +30,26 @@ void MainMenu::on_registerProductButton_clicked(){
     printf("loop ended\n");
 
 
+}
+
+
+void MainMenu::on_updateTableStatusButton_clicked()
+{
+    hide();
+
+    TableListMenu* tableListMenu = new TableListMenu();
+    tableListMenu->show();
+
+    QEventLoop loop;
+    connect(tableListMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
+    loop.exec();
+
+    show();
+}
+
+
+void MainMenu::on_backButton_clicked()
+{
+    close();
 }
 

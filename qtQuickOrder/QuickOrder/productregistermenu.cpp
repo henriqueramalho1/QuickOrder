@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-ProductRegisterMenu::ProductRegisterMenu(QWidget *parent, QWidget *caller): Menu(parent, caller), ui(new Ui::ProductRegisterMenu){
+ProductRegisterMenu::ProductRegisterMenu(QWidget *parent): Menu(parent), ui(new Ui::ProductRegisterMenu){
     ui->setupUi(this);
 }
 

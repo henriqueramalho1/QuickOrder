@@ -12,7 +12,7 @@ class ProductRegisterMenu : public Menu{
     Q_OBJECT
 
 public:
-    ProductRegisterMenu(QWidget *parent = nullptr, QWidget* caller = nullptr);
+    ProductRegisterMenu(QWidget *parent = nullptr);
     virtual ~ProductRegisterMenu();
 
 private slots:

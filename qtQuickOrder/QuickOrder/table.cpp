@@ -1,7 +1,7 @@
 #include "table.h"
 
-Table::Table(int i):
-    id(i), costumers()
+Table::Table(int i, std::string n):
+    id(i), costumers(), active(false), name(n)
 {
 
 }
@@ -40,4 +40,19 @@ Costumer* Table::getCostumer(std::string name)
     }
 
     return NULL;
+}
+
+void Table::changeStatus(bool b)
+{
+    active = b;
+}
+
+std::string Table::getName()
+{
+    return name;
+}
+
+int Table::getId()
+{
+    return id;
 }
