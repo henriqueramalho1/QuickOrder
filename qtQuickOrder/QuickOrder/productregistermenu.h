@@ -15,6 +15,13 @@ public:
     ProductRegisterMenu(QWidget *parent = nullptr, QWidget* caller = nullptr);
     virtual ~ProductRegisterMenu();
 
+private slots:
+
+
+    void on_registerButton_clicked();
+
+    void on_backButton_clicked();
+
 private:
     Ui::ProductRegisterMenu *ui;
 

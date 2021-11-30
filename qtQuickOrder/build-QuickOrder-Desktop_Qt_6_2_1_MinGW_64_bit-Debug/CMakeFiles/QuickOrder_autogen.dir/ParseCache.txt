@@ -3,6 +3,8 @@ F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumer.h
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.cpp
  uic:./ui_mainmenu.h
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.h
+F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.cpp
+F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/table.h
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.h
  mmc:Q_OBJECT
  mdp:F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.h
@@ -296,10 +298,8 @@ F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.h
  mdp:C:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h
  mdp:F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/menu.h
  mdp:F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.h
-F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/table.h
-F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/ingredient.cpp
-F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/product.h
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/costumer.cpp
+F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/product.h
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/main.cpp
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/product.cpp
 F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/table.cpp

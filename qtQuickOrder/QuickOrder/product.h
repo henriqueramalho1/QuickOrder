@@ -16,6 +16,7 @@ public:
     Product(std::string n = "");
     ~Product();
     std::string getName();
+    void addIngredient(std::string ingredientName);
 };
 
 #endif // PRODUCT_H

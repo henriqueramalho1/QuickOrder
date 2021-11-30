@@ -3,7 +3,8 @@
 Menu::Menu(QWidget *parent, QWidget *caller)
     : QWidget(parent)
 {
-
+    setAttribute(Qt::WA_QuitOnClose, false);
+    setAttribute(Qt::WA_DeleteOnClose, true);
 
 }
 

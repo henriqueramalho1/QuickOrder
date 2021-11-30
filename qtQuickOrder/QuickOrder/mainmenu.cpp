@@ -5,27 +5,28 @@
 
 MainMenu::MainMenu(QWidget *parent): Menu(parent), ui(new Ui::MainMenu){
     ui->setupUi(this);
-
-    productRegisterMenu = new ProductRegisterMenu(nullptr, this);
-
-    connect(ui->registerProductButton, SIGNAL(clicked()), this, SLOT(hide()));
-    connect(ui->registerProductButton, SIGNAL(clicked()), productRegisterMenu, SLOT(show()));
+    setAttribute(Qt::WA_QuitOnClose, true);
+    setAttribute(Qt::WA_DeleteOnClose, false);
 }
 
 MainMenu::~MainMenu(){
-    delete productRegisterMenu;
     delete ui;
 }
 
 
 void MainMenu::on_registerProductButton_clicked(){
+    hide();
 
+    productRegisterMenu = new ProductRegisterMenu(nullptr, this);
+    productRegisterMenu->show();
 
-   //QEventLoop loop;
-   //connect(productRegisterMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
-   //loop.exec();
+    QEventLoop loop;
+    connect(productRegisterMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
+    loop.exec();
 
-
+    show();
+    //
+    printf("loop ended\n");
 
 
 }
