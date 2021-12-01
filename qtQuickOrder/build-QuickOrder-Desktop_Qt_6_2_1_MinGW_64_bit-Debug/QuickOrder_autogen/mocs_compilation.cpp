@@ -2,5 +2,6 @@
 #include "EWIEGA46WW/moc_costumerregistermenu.cpp"
 #include "EWIEGA46WW/moc_mainmenu.cpp"
 #include "EWIEGA46WW/moc_menu.cpp"
+#include "EWIEGA46WW/moc_orderstatusmenu.cpp"
 #include "EWIEGA46WW/moc_productregistermenu.cpp"
 #include "EWIEGA46WW/moc_tablelistmenu.cpp"

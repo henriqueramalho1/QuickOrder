@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/addr2line.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/ar.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug"
+			"value" : "f:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Qt/Tools/CMake_64/bin/cmake.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Qt/Tools/CMake_64/bin/cpack.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Qt/Tools/CMake_64/bin/ctest.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -139,11 +139,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/g++.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/gcc-ar.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/gcc-ranlib.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/gcc.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/dlltool.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder"
+			"value" : "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/ld.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/Ninja/ninja.exe"
+			"value" : "C:/Qt/Tools/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/nm.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -683,7 +683,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/objcopy.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -699,7 +699,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/objdump.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -723,7 +723,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "D:/Qt/6.2.1/mingw81_64"
+			"value" : "C:/Qt/6.2.1/mingw81_64;D:/Qt/6.2.1/mingw81_64"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
+			"value" : "C:/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -847,7 +847,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/ranlib.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -863,7 +863,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/windres.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/readelf.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -983,7 +983,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Qt/Tools/CMake_64/share/cmake-3.21"
+			"value" : "C:/Qt/Tools/CMake_64/share/cmake-3.21"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/Qt/Tools/mingw810_64/bin/strip.exe"
+			"value" : "C:/Qt/Tools/mingw810_64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1246,38 +1246,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "LIB_EAY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "LIB_EAY-NOTFOUND"
-		},
-		{
-			"name" : "OPENSSL_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "OPENSSL_INCLUDE_DIR-NOTFOUND"
-		},
-		{
 			"name" : "QT_ADDITIONAL_PACKAGES_PREFIX_PATH",
 			"properties" : 
 			[
@@ -1311,7 +1279,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "QT_FEATURE_abstractbutton",
@@ -1620,18 +1588,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: backtrace (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_brotli",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: brotli (from target Qt6::Network)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -2226,18 +2182,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_dnslookup",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: dnslookup (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_dockwidget",
 			"properties" : 
 			[
@@ -2284,18 +2228,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_dtls",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: dtls (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_dynamicgl",
@@ -2802,18 +2734,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_getifaddrs",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: getifaddrs (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_gif",
 			"properties" : 
 			[
@@ -2886,18 +2806,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_gssapi",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: gssapi (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_gtk3",
 			"properties" : 
 			[
@@ -2958,18 +2866,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_http",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: http (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_ico",
 			"properties" : 
 			[
@@ -3004,18 +2900,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_ifr_index",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: ifr_index (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_im",
@@ -3210,18 +3094,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_ipv6ifname",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: ipv6ifname (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_islamiccivilcalendar",
 			"properties" : 
 			[
@@ -3378,18 +3250,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_libproxy",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: libproxy (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_library",
 			"properties" : 
 			[
@@ -3438,18 +3298,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_linux_netlink",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: linux_netlink (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_linuxfb",
 			"properties" : 
 			[
@@ -3480,18 +3328,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: listwidget (from target Qt6::Widgets)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_localserver",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: localserver (from target Qt6::Network)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3678,72 +3514,12 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_networkdiskcache",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: networkdiskcache (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_networkinterface",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: networkinterface (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_networklistmanager",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: networklistmanager (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_networkproxy",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: networkproxy (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_no_pkg_config",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: no_pkg_config (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_ocsp",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: ocsp (from target Qt6::Network)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3808,42 +3584,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_openssl",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: openssl (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_openssl_linked",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: openssl_linked (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_opensslv11",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: opensslv11 (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_openvg",
@@ -4110,222 +3850,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_qml_animation",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_animation (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_debug",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_debug (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_delegate_model",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_delegate_model (from target Qt6::QmlModels)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_devtools",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_devtools (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_itemmodel",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_itemmodel (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_jit",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_jit (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_list_model",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_list_model (from target Qt6::QmlModels)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_locale",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_locale (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_network",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_network (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_object_model",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_object_model (from target Qt6::QmlModels)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_preview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_preview (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_profiler",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_profiler (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_python",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_python (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_sequence_object",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_sequence_object (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_table_model",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_table_model (from target Qt6::QmlModels)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_worker_script",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_worker_script (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_xml_http_request",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_xml_http_request (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_qml_xmllistmodel",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: qml_xmllistmodel (from target Qt6::Qml)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_qqnx_imf",
 			"properties" : 
 			[
@@ -4348,210 +3872,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_quick_animatedimage",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_animatedimage (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_canvas",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_canvas (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_designer",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_designer (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_draganddrop",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_draganddrop (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_flipable",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_flipable (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_gridview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_gridview (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_itemview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_itemview (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_listview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_listview (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_particles",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_particles (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_path",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_path (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_pathview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_pathview (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_positioners",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_positioners (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_repeater",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_repeater (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_shadereffect",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_shadereffect (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_sprite",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_sprite (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_tableview",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_tableview (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_quick_viewtransitions",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: quick_viewtransitions (from target Qt6::Quick)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_radiobutton",
@@ -4710,18 +4030,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_schannel",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: schannel (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_scrollarea",
 			"properties" : 
 			[
@@ -4756,30 +4064,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_sctp",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: sctp (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_securetransport",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: securetransport (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_separate_debug_info",
@@ -4950,18 +4234,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_socks5",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: socks5 (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_sortfilterproxymodel",
 			"properties" : 
 			[
@@ -5076,30 +4348,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: sse4_2 (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_ssl",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: ssl (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_sspi",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: sspi (from target Qt6::Network)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -5406,18 +4654,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_system_proxies",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: system_proxies (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_system_textmarkdownreader",
 			"properties" : 
 			[
@@ -5718,18 +4954,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_topleveldomain",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: topleveldomain (from target Qt6::Network)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_translation",
 			"properties" : 
 			[
@@ -5796,18 +5020,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: tuiotouch (from target Qt6::Gui)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_udpsocket",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: udpsocket (from target Qt6::Network)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -6231,7 +5443,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "D:/Qt/6.2.1/mingw81_64/bin/qmake.exe"
+			"value" : "C:/Qt/6.2.1/mingw81_64/bin/qmake.exe"
 		},
 		{
 			"name" : "Qt6CoreTools_DIR",
@@ -6243,7 +5455,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6CoreTools"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6CoreTools"
 		},
 		{
 			"name" : "Qt6Core_DIR",
@@ -6255,7 +5467,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Core"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6EntryPointPrivate_DIR",
@@ -6267,7 +5479,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6EntryPointPrivate"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6EntryPointPrivate"
 		},
 		{
 			"name" : "Qt6GuiTools_DIR",
@@ -6279,7 +5491,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6GuiTools"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6GuiTools"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -6291,91 +5503,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Gui"
-		},
-		{
-			"name" : "Qt6Network_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6Network."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Network"
-		},
-		{
-			"name" : "Qt6OpenGL_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6OpenGL."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6OpenGL"
-		},
-		{
-			"name" : "Qt6QmlCompilerPlus_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6QmlCompilerPlus."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Qt6QmlCompilerPlus_DIR-NOTFOUND"
-		},
-		{
-			"name" : "Qt6QmlModels_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6QmlModels."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6QmlModels"
-		},
-		{
-			"name" : "Qt6QmlTools_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6QmlTools."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6QmlTools"
-		},
-		{
-			"name" : "Qt6Qml_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6Qml."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Qml"
-		},
-		{
-			"name" : "Qt6Quick_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6Quick."
-				}
-			],
-			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Quick"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6Sql_DIR",
@@ -6387,7 +5515,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Sql"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Sql"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -6399,7 +5527,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6WidgetsTools"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -6411,7 +5539,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Widgets"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "Qt6_DIR",
@@ -6423,7 +5551,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6"
+			"value" : "C:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "QuickOrder_BINARY_DIR",
@@ -6435,7 +5563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug"
+			"value" : "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "QuickOrder_IS_TOP_LEVEL",
@@ -6459,23 +5587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder"
-		},
-		{
-			"name" : "SSL_EAY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SSL_EAY-NOTFOUND"
+			"value" : "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6540,18 +5652,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "Vulkan_LIBRARY-NOTFOUND"
-		},
-		{
-			"name" : "__qt_qml_macros_module_base_dir",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "D:/Qt/6.2.1/mingw81_64/lib/cmake/Qt6Qml"
 		}
 	],
 	"kind" : "cache",

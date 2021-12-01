@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "QuickOrder::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QuickOrder-Debug-39eada4e00c8b519ecbb.json",
+					"jsonFile" : "target-QuickOrder-Debug-4161ab2dee89c2ae621c.json",
 					"name" : "QuickOrder",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "QuickOrder_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QuickOrder_autogen-Debug-a0e0efa98c0ca9a57f4e.json",
+					"jsonFile" : "target-QuickOrder_autogen-Debug-fc8175750ab504015088.json",
 					"name" : "QuickOrder_autogen",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "QuickOrder_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-QuickOrder_autogen_timestamp_deps-Debug-e315a25df537995010f3.json",
+					"jsonFile" : "target-QuickOrder_autogen_timestamp_deps-Debug-5bdb7cb07d7f5c300048.json",
 					"name" : "QuickOrder_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug",
-		"source" : "D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder"
+		"build" : "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug",
+		"source" : "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder"
 	},
 	"version" : 
 	{

@@ -3,6 +3,7 @@
 #include "productregistermenu.h"
 #include "tablelistmenu.h"
 #include "costumerregistermenu.h"
+#include "orderstatusmenu.h"
 #include <QEventLoop>
 
 MainMenu::MainMenu(QWidget *parent): Menu(parent), ui(new Ui::MainMenu){
@@ -66,5 +67,21 @@ void MainMenu::on_addCostumerButton_clicked()
 void MainMenu::on_backButton_clicked()
 {
     close();
+}
+
+
+void MainMenu::on_orderStatusButton_clicked()
+{
+    hide();
+
+    Menu* orderStatusMenu = new OrderStatusMenu(nullptr);
+    orderStatusMenu->show();
+
+    QEventLoop loop;
+    connect(orderStatusMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
+    loop.exec();
+
+    show();
+
 }
 

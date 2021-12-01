@@ -29,6 +29,8 @@ private slots:
 
     void on_backButton_clicked();
 
+    void on_orderStatusButton_clicked();
+
 private:
     Ui::MainMenu *ui;
 
