@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>MainMenu</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -90,13 +90,6 @@
      <widget class="QPushButton" name="showOrdersButton">
       <property name="text">
        <string>Exibir pedidos</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="checkTableStatusButton">
-      <property name="text">
-       <string>Verificar status das mesas</string>
       </property>
      </widget>
     </item>
