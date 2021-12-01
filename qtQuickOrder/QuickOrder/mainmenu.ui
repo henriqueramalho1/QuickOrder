@@ -59,13 +59,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="cancelOrderButton">
-      <property name="text">
-       <string>Cancelar pedido</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="pushButton_7">
       <property name="text">
        <string>Atualizar status do pedido</string>
