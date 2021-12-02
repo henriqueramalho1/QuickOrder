@@ -118,7 +118,7 @@ CMAKE_OBJCOPY:FILEPATH=C:/Qt/Tools/mingw810_64/bin/objcopy.exe
 CMAKE_OBJDUMP:FILEPATH=C:/Qt/Tools/mingw810_64/bin/objdump.exe
 
 //No help, variable specified on the command line.
-CMAKE_PREFIX_PATH:STRING=C:/Qt/6.2.1/mingw81_64;D:/Qt/6.2.1/mingw81_64
+CMAKE_PREFIX_PATH:STRING=C:/Qt/6.2.1/mingw81_64
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=

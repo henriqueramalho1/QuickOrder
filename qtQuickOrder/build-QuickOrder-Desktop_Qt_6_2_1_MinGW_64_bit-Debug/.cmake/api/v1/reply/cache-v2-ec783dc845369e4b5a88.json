@@ -723,7 +723,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Qt/6.2.1/mingw81_64;D:/Qt/6.2.1/mingw81_64"
+			"value" : "C:/Qt/6.2.1/mingw81_64"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
