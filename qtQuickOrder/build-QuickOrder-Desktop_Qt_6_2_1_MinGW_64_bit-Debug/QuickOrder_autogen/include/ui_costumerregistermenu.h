@@ -14,6 +14,7 @@
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
@@ -24,13 +25,14 @@ QT_BEGIN_NAMESPACE
 class Ui_CostumerRegisterMenu
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QFormLayout *formLayout;
     QLabel *label;
     QLineEdit *nameInput;
     QLabel *label_2;
     QSpinBox *tableSelect;
+    QListWidget *costumerWidget;
     QPushButton *registerButton;
     QPushButton *backButton;
 
@@ -39,43 +41,48 @@ public:
         if (CostumerRegisterMenu->objectName().isEmpty())
             CostumerRegisterMenu->setObjectName(QString::fromUtf8("CostumerRegisterMenu"));
         CostumerRegisterMenu->resize(400, 300);
-        widget = new QWidget(CostumerRegisterMenu);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(9, 11, 381, 281));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(CostumerRegisterMenu);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(9, 11, 381, 281));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         formLayout = new QFormLayout();
         formLayout->setObjectName(QString::fromUtf8("formLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label);
 
-        nameInput = new QLineEdit(widget);
+        nameInput = new QLineEdit(layoutWidget);
         nameInput->setObjectName(QString::fromUtf8("nameInput"));
 
         formLayout->setWidget(0, QFormLayout::FieldRole, nameInput);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, label_2);
+        formLayout->setWidget(2, QFormLayout::LabelRole, label_2);
 
-        tableSelect = new QSpinBox(widget);
+        tableSelect = new QSpinBox(layoutWidget);
         tableSelect->setObjectName(QString::fromUtf8("tableSelect"));
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, tableSelect);
+        formLayout->setWidget(2, QFormLayout::FieldRole, tableSelect);
+
+        costumerWidget = new QListWidget(layoutWidget);
+        costumerWidget->setObjectName(QString::fromUtf8("costumerWidget"));
+
+        formLayout->setWidget(3, QFormLayout::SpanningRole, costumerWidget);
 
 
         verticalLayout->addLayout(formLayout);
 
-        registerButton = new QPushButton(widget);
+        registerButton = new QPushButton(layoutWidget);
         registerButton->setObjectName(QString::fromUtf8("registerButton"));
 
         verticalLayout->addWidget(registerButton);
 
-        backButton = new QPushButton(widget);
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         verticalLayout->addWidget(backButton);

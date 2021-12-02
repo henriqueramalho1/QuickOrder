@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 6	317	6601692089324518	QuickOrder_autogen/timestamp	a5fa569f55cf1692
 368	6226	6601692148405596	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
 6	317	6601692089324518	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
@@ -7,10 +8,20 @@
 10	693	6601712632577324	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	918b91b9d945f69d
 321	5935	6601692145493151	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	f30b8590339cb4a7
 6361	7190	6601692157988113	QuickOrder.exe	604f911e4e7303d9
+=======
+4	325	6601780919205897	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+365	7181	6601780987756913	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
+4	325	6601780919205897	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+1042	9552	6601778007348824	CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj	7d2455f46c57f9d2
+1078	8819	6601702442988628	CMakeFiles/QuickOrder.dir/main.cpp.obj	c4accb6edea3dde0
+329	6974	6601780985627458	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	f30b8590339cb4a7
+7323	8414	6601780999990754	QuickOrder.exe	2961218839c7e903
+>>>>>>> origin/order
 1799	2738	6601129341225256	CMakeFiles/QuickOrder.dir/costumer.cpp.obj	6e6880cfddf45279
 1815	2644	6601129340455393	CMakeFiles/QuickOrder.dir/ingredient.cpp.obj	7186a979c32b7f13
 1808	2819	6601129342065483	CMakeFiles/QuickOrder.dir/table.cpp.obj	ed0546c5cbcfb269
 1825	2772	6601129341595284	CMakeFiles/QuickOrder.dir/product.cpp.obj	863ea79dac897550
+<<<<<<< HEAD
 6	317	6601692089324518	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
 1847	10242	6601129413966102	CMakeFiles/QuickOrder.dir/menu.cpp.obj	b7a64b2c1ebc5454
 336	6238	6601692148535457	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
@@ -41,3 +52,61 @@
 11851	16932	6601714758564931	CMakeFiles/QuickOrder.dir/database.cpp.obj	5cfc65016db6b7ec
 11895	17051	6601714759779410	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	9c0f328420c1b556
 17053	20419	6601714793395508	QuickOrder.exe	cdd946bd74c1afb8
+=======
+1847	10242	6601129413966102	CMakeFiles/QuickOrder.dir/menu.cpp.obj	b7a64b2c1ebc5454
+4	325	6601780919205897	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+338	7194	6601780987896763	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
+4	325	6601780919205897	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+355	7323	6601780989165466	CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj	a4db8aa922e39bd4
+346	7243	6601780988386265	CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj	778b0a7cc151d9a6
+1	586	6601784982155591	build.ninja	96960b0f66a5258c
+376	7164	6601780987567105	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	51a22c46fc693f0
+2739	10672	6601129420777796	CMakeFiles/QuickOrder.dir/database.cpp.obj	5631dba6df6bc72
+386	7135	6601780987280827	CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj	28ffd095652b376e
+5	1013	6601792026269113	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	1013	6601792026269113	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+5	1013	6601792026269113	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	1013	6601792026269113	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+1067	7878	6601792096641549	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	51a22c46fc693f0
+1027	9102	6601792108912494	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
+1092	9141	6601792109322066	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
+1046	9215	6601792110041508	CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj	778b0a7cc151d9a6
+1057	9321	6601792111090387	CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj	a4db8aa922e39bd4
+5	936	6601792924335016	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	936	6601792924335016	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+5	936	6601792924335016	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	936	6601792924335016	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+966	7906	6601792995238529	CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj	778b0a7cc151d9a6
+984	8029	6601792996746971	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
+995	8090	6601792997325744	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	51a22c46fc693f0
+951	8155	6601792997986533	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
+936	8347	6601792999930588	CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj	7d2455f46c57f9d2
+943	8348	6601792999920616	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	f30b8590339cb4a7
+974	8546	6601793001888760	CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj	a4db8aa922e39bd4
+1007	8607	6601793002518072	CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj	28ffd095652b376e
+5	322	6601793142029259	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	322	6601793142029259	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+5	322	6601793142029259	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+5	322	6601793142029259	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+341	6741	6601793206135901	CMakeFiles/QuickOrder.dir/productlistmenu.cpp.obj	6d9e7838a43b77a6
+326	7152	6601793210336971	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	f30b8590339cb4a7
+391	7153	6601793210316994	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	51a22c46fc693f0
+349	7221	6601793211026460	CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj	778b0a7cc151d9a6
+357	7257	6601793211366116	CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj	a4db8aa922e39bd4
+333	7260	6601793211406076	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
+366	7364	6601793212442795	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
+378	7370	6601793212522555	CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj	28ffd095652b376e
+7371	8492	6601793223697870	QuickOrder.exe	e7d73ba549cf457a
+6	322	6601793970314881	QuickOrder_autogen/timestamp	a5fa569f55cf1692
+6	322	6601793970314881	QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+6	322	6601793970314881	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/timestamp	a5fa569f55cf1692
+6	322	6601793970314881	D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/mocs_compilation.cpp	a5fa569f55cf1692
+326	7069	6601794037674118	CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj	f30b8590339cb4a7
+368	7153	6601794038393383	CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj	28ffd095652b376e
+378	7175	6601794038831791	CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj	51a22c46fc693f0
+356	7251	6601794039589246	CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj	755dddfa6f26c25b
+332	7255	6601794039648706	CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj	f76620b27afc99a2
+340	7370	6601794040792705	CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj	a4db8aa922e39bd4
+346	7373	6601794040822611	CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj	778b0a7cc151d9a6
+7373	8391	6601794050977895	QuickOrder.exe	e7d73ba549cf457a
+>>>>>>> origin/order
