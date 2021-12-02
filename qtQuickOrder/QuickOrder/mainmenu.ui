@@ -54,21 +54,7 @@
     <item>
      <widget class="QPushButton" name="orderStatusButton">
       <property name="text">
-       <string>Verificar status de pedido</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="cancelOrderButton">
-      <property name="text">
-       <string>Cancelar pedido</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_7">
-      <property name="text">
-       <string>Atualizar status do pedido</string>
+       <string>Listar pedidos</string>
       </property>
      </widget>
     </item>
@@ -83,13 +69,6 @@
      <widget class="QPushButton" name="updateInventoryButton">
       <property name="text">
        <string>Atualizar estoque</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="showOrdersButton">
-      <property name="text">
-       <string>Exibir pedidos</string>
       </property>
      </widget>
     </item>

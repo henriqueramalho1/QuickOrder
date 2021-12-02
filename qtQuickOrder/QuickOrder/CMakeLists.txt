@@ -31,7 +31,11 @@ set(PROJECT_SOURCES
         costumerregistermenu.ui
         costumerregistermenu.h costumerregistermenu.cpp
         database.h database.cpp
-)
+        orderstatusmenu.ui
+        orderstatusmenu.h orderstatusmenu.cpp
+        updateinventorymenu.ui
+        updateinventorymenu.h updateinventorymenu.cpp
+        )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QuickOrder
