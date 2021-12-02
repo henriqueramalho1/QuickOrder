@@ -15,6 +15,9 @@ class TableListMenu : public Menu
 public:
     TableListMenu(QWidget* parent = nullptr);
     virtual ~TableListMenu();
+    void loadTableList();
+    void addToDatabase(int id, int status);
+    void setItemColor(int i, int r, int g, int b);
 
 private slots:
     void on_backPushButton_clicked();

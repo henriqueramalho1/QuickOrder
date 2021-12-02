@@ -30,6 +30,7 @@ set(PROJECT_SOURCES
         tablelistmenu.ui
         costumerregistermenu.ui
         costumerregistermenu.h costumerregistermenu.cpp
+        database.h database.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

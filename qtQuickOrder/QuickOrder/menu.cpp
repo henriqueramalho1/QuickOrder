@@ -1,7 +1,7 @@
 #include "menu.h"
 
-Menu::Menu(QWidget *parent)
-    : QWidget(parent)
+Menu::Menu(QWidget *parent) :
+    QWidget(parent)
 {
     setAttribute(Qt::WA_QuitOnClose, false);
     setAttribute(Qt::WA_DeleteOnClose, true);
@@ -11,3 +11,5 @@ Menu::Menu(QWidget *parent)
 Menu::~Menu(){
 
 }
+
+Database Menu::database;

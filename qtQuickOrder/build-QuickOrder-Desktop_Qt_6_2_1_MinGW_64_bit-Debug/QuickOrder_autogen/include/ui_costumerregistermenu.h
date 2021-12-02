@@ -12,11 +12,11 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFormLayout>
-#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,14 +25,14 @@ class Ui_CostumerRegisterMenu
 {
 public:
     QWidget *widget;
-    QGridLayout *gridLayout;
+    QVBoxLayout *verticalLayout;
     QFormLayout *formLayout;
     QLabel *label;
     QLineEdit *nameInput;
     QLabel *label_2;
     QSpinBox *tableSelect;
-    QPushButton *backButton;
     QPushButton *registerButton;
+    QPushButton *backButton;
 
     void setupUi(QWidget *CostumerRegisterMenu)
     {
@@ -41,10 +41,10 @@ public:
         CostumerRegisterMenu->resize(400, 300);
         widget = new QWidget(CostumerRegisterMenu);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(8, 10, 381, 281));
-        gridLayout = new QGridLayout(widget);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
+        widget->setGeometry(QRect(9, 11, 381, 281));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
         formLayout = new QFormLayout();
         formLayout->setObjectName(QString::fromUtf8("formLayout"));
         label = new QLabel(widget);
@@ -68,17 +68,17 @@ public:
         formLayout->setWidget(1, QFormLayout::FieldRole, tableSelect);
 
 
-        gridLayout->addLayout(formLayout, 0, 0, 1, 2);
-
-        backButton = new QPushButton(widget);
-        backButton->setObjectName(QString::fromUtf8("backButton"));
-
-        gridLayout->addWidget(backButton, 1, 0, 1, 1);
+        verticalLayout->addLayout(formLayout);
 
         registerButton = new QPushButton(widget);
         registerButton->setObjectName(QString::fromUtf8("registerButton"));
 
-        gridLayout->addWidget(registerButton, 1, 1, 1, 1);
+        verticalLayout->addWidget(registerButton);
+
+        backButton = new QPushButton(widget);
+        backButton->setObjectName(QString::fromUtf8("backButton"));
+
+        verticalLayout->addWidget(backButton);
 
 
         retranslateUi(CostumerRegisterMenu);
@@ -92,8 +92,8 @@ public:
         label->setText(QCoreApplication::translate("CostumerRegisterMenu", "Nome do Consumidor", nullptr));
         nameInput->setPlaceholderText(QCoreApplication::translate("CostumerRegisterMenu", "Nome", nullptr));
         label_2->setText(QCoreApplication::translate("CostumerRegisterMenu", "Mesa", nullptr));
-        backButton->setText(QCoreApplication::translate("CostumerRegisterMenu", "Voltar", nullptr));
         registerButton->setText(QCoreApplication::translate("CostumerRegisterMenu", "Cadastrar", nullptr));
+        backButton->setText(QCoreApplication::translate("CostumerRegisterMenu", "Voltar", nullptr));
     } // retranslateUi
 
 };

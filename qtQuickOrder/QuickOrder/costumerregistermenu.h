@@ -15,6 +15,8 @@ class CostumerRegisterMenu : public Menu{
 public:
     CostumerRegisterMenu(QWidget *parent = nullptr);
     virtual ~CostumerRegisterMenu();
+    void addToDatabase(QString name, int tableId);
+    bool isTableRegistered(int tableId);
 
 private slots:
 

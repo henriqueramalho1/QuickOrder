@@ -1,6 +1,7 @@
 #include "tablelistmenu.h"
 #include "./ui_tablelistmenu.h"
 #include <iostream>
+#include <QMessageBox>
 
 TableListMenu::TableListMenu(QWidget* parent):
     Menu(parent),
@@ -8,7 +9,8 @@ TableListMenu::TableListMenu(QWidget* parent):
     tableList()
 {
     ui->setupUi(this);
-    tableCount = 1;
+    tableCount = 0;
+    loadTableList();
 }
 
 TableListMenu::~TableListMenu()
@@ -23,6 +25,42 @@ TableListMenu::~TableListMenu()
     delete ui;
 }
 
+void TableListMenu::loadTableList()
+{
+    QSqlQuery query;
+
+    query.prepare("select * from table_tb");
+
+
+    if(query.exec())
+    {
+        while(query.next())
+        {
+            tableCount++;
+            QString id = query.value(0).toString();
+            int status = query.value(1).toInt();
+            ui->listWidget->addItem(id);
+            if(status == 1)
+            {
+                setItemColor(id.toInt() - 1, 203, 246, 212);
+            }
+            else
+            {
+                setItemColor(id.toInt() - 1, 247,177,192);
+            }
+        }
+    }
+}
+
+void TableListMenu::setItemColor(int i, int r, int g, int b)
+{
+    QColor color;
+    color.setRgb(r, g, b);
+    color.setAlpha(100);
+    ui->listWidget->item(i)->setBackground(QBrush(QColor(color)));
+}
+
+
 void TableListMenu::on_backPushButton_clicked()
 {
     close();
@@ -31,45 +69,32 @@ void TableListMenu::on_backPushButton_clicked()
 
 void TableListMenu::on_addPushButton_clicked()
 {
-    std::string mesa = "Mesa ";
+    tableCount++;
     std::string number = std::to_string(tableCount);
-
-    QString textQ = QString::fromStdString(mesa+number);
-
-    Table* table = new Table(tableCount, textQ.toStdString());
-    tableList.push_back(table);
-    std::cout << "Criando "<< textQ.toStdString() << " com id " << table->getId() <<std::endl;
+    QString textQ = QString::fromStdString(number);
 
     ui->listWidget->addItem(textQ);
-    QColor red;
-    red.setRgb(247,177,192);
-    red.setAlpha(100);
-    ui->listWidget->item(tableCount - 1)->setBackground(QBrush(QColor(red)));
-    tableCount++;
+    setItemColor(tableCount - 1, 247,177,192);
+
+    addToDatabase(tableCount, 0);
 }
 
 
 void TableListMenu::on_activatePushButton_clicked()
 {
     QList<QListWidgetItem*> selected = ui->listWidget->selectedItems();
+    QSqlQuery query;
 
     for(auto it = selected.begin(); it != selected.end(); it++)
     {
-        std::string name = (*it)->text().toStdString();
-        std::cout << name << std::endl;
+        QString id = (*it)->text();
         QColor green;
         green.setRgb(203, 246, 212);
-        green.setAlpha(150);
-       (*it)->setBackground(QBrush(QColor(green)));
+        green.setAlpha(100);
+        (*it)->setBackground(QBrush(QColor(green)));
 
-        for(auto it2 = tableList.begin(); it2 != tableList.end(); it2++)
-        {
-            if((*it2)->getName() == name)
-            {
-                (*it2)->changeStatus(true);
-                std::cout << "Mudando status para (TRUE) da " << (*it2)->getName() << " id: " << (*it2)->getId() << std::endl;
-            }
-        }
+        query.prepare("update table_tb set status = 1 where id = "+id+"");
+        query.exec();
     }
 }
 
@@ -77,25 +102,28 @@ void TableListMenu::on_activatePushButton_clicked()
 void TableListMenu::on_desactivatePushButton_clicked()
 {
     QList<QListWidgetItem*> selected = ui->listWidget->selectedItems();
+    QSqlQuery query;
 
     for(auto it = selected.begin(); it != selected.end(); it++)
     {
-        std::string name = (*it)->text().toStdString();
-        std::cout << name << std::endl;
+        QString id = (*it)->text();
         QColor red;
         red.setRgb(247,177,192);
         red.setAlpha(100);
        (*it)->setBackground(QBrush(QColor(red)));
-
-        for(auto it2 = tableList.begin(); it2 != tableList.end(); it2++)
-        {
-            if((*it2)->getName() == name)
-            {
-                (*it2)->changeStatus(false);
-                std::cout << "Mudando status para (FALSE) da " << (*it2)->getName() << " id: " << (*it2)->getId() << std::endl;
-            }
-        }
+        query.prepare("update table_tb set status = 0 where id = "+id+"");
+        query.exec();
     }
 
 }
 
+void TableListMenu::addToDatabase(int id, int status = 0)
+{
+    QSqlQuery query;
+
+    query.prepare("insert into table_tb (id, status) values (?, ?)");
+    query.addBindValue(id);
+    query.addBindValue(status);
+
+    query.exec();
+}

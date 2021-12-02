@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
@@ -23,8 +24,9 @@ class Ui_TableListMenu
 {
 public:
     QFrame *frame;
-    QWidget *layoutWidget;
+    QWidget *widget;
     QVBoxLayout *verticalLayout;
+    QLabel *label;
     QListWidget *listWidget;
     QPushButton *activatePushButton;
     QPushButton *desactivatePushButton;
@@ -41,13 +43,19 @@ public:
         frame->setGeometry(QRect(19, 19, 501, 351));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        layoutWidget = new QWidget(frame);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 12, 481, 321));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        widget = new QWidget(frame);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(11, 10, 471, 321));
+        verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        listWidget = new QListWidget(layoutWidget);
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(label);
+
+        listWidget = new QListWidget(widget);
         listWidget->setObjectName(QString::fromUtf8("listWidget"));
         listWidget->setAutoFillBackground(false);
         listWidget->setAlternatingRowColors(true);
@@ -55,22 +63,22 @@ public:
 
         verticalLayout->addWidget(listWidget);
 
-        activatePushButton = new QPushButton(layoutWidget);
+        activatePushButton = new QPushButton(widget);
         activatePushButton->setObjectName(QString::fromUtf8("activatePushButton"));
 
         verticalLayout->addWidget(activatePushButton);
 
-        desactivatePushButton = new QPushButton(layoutWidget);
+        desactivatePushButton = new QPushButton(widget);
         desactivatePushButton->setObjectName(QString::fromUtf8("desactivatePushButton"));
 
         verticalLayout->addWidget(desactivatePushButton);
 
-        addPushButton = new QPushButton(layoutWidget);
+        addPushButton = new QPushButton(widget);
         addPushButton->setObjectName(QString::fromUtf8("addPushButton"));
 
         verticalLayout->addWidget(addPushButton);
 
-        backPushButton = new QPushButton(layoutWidget);
+        backPushButton = new QPushButton(widget);
         backPushButton->setObjectName(QString::fromUtf8("backPushButton"));
 
         verticalLayout->addWidget(backPushButton);
@@ -84,6 +92,7 @@ public:
     void retranslateUi(QWidget *TableListMenu)
     {
         TableListMenu->setWindowTitle(QCoreApplication::translate("TableListMenu", "Menu de altera\303\247\303\243o de status de mesas", nullptr));
+        label->setText(QCoreApplication::translate("TableListMenu", "Lista de Mesas", nullptr));
         activatePushButton->setText(QCoreApplication::translate("TableListMenu", "Ativar", nullptr));
         desactivatePushButton->setText(QCoreApplication::translate("TableListMenu", "Desativar", nullptr));
         addPushButton->setText(QCoreApplication::translate("TableListMenu", "Adicionar Mesa", nullptr));
