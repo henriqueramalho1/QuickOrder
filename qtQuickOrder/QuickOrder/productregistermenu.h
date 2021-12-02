@@ -14,6 +14,7 @@ class ProductRegisterMenu : public Menu{
 public:
     ProductRegisterMenu(QWidget *parent = nullptr);
     virtual ~ProductRegisterMenu();
+    void addToDatabase(QString productName, QString ingredient1, QString ingredient2 = "", QString ingredient3 = "", QString ingredient4 = "", QString ingredient5 = "");
 
 private slots:
 
