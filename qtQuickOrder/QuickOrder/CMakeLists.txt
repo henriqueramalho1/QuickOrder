@@ -37,6 +37,8 @@ set(PROJECT_SOURCES
         updateinventorymenu.h updateinventorymenu.cpp
         orderregistermenu.h orderregistermenu.cpp
         orderregistermenu.ui
+        productlistmenu.h productlistmenu.cpp
+        productlistmenu.ui
         )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

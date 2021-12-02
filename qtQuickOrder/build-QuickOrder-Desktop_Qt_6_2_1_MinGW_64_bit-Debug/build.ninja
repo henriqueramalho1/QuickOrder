@@ -169,6 +169,14 @@ build CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj: CXX_COMPILER__QuickOr
   OBJECT_DIR = CMakeFiles\QuickOrder.dir
   OBJECT_FILE_DIR = CMakeFiles\QuickOrder.dir
 
+build CMakeFiles/QuickOrder.dir/productlistmenu.cpp.obj: CXX_COMPILER__QuickOrder_Debug D$:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.cpp || cmake_object_order_depends_target_QuickOrder
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0601 -D_WIN64
+  DEP_FILE = CMakeFiles\QuickOrder.dir\productlistmenu.cpp.obj.d
+  FLAGS = -g -Wno-error=invalid-offsetof -std=gnu++17
+  INCLUDES = -ID:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug -ID:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder -ID:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/include -isystem D:/Qt/6.2.1/mingw81_64/include/QtCore -isystem D:/Qt/6.2.1/mingw81_64/include -isystem D:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -isystem D:/Qt/6.2.1/mingw81_64/include/QtWidgets -isystem D:/Qt/6.2.1/mingw81_64/include/QtGui -isystem D:/Qt/6.2.1/mingw81_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\QuickOrder.dir
+  OBJECT_FILE_DIR = CMakeFiles\QuickOrder.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target QuickOrder
@@ -177,7 +185,7 @@ build CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj: CXX_COMPILER__QuickOr
 #############################################
 # Link the executable QuickOrder.exe
 
-build QuickOrder.exe: CXX_EXECUTABLE_LINKER__QuickOrder_Debug CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj CMakeFiles/QuickOrder.dir/main.cpp.obj CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumer.cpp.obj CMakeFiles/QuickOrder.dir/ingredient.cpp.obj CMakeFiles/QuickOrder.dir/product.cpp.obj CMakeFiles/QuickOrder.dir/table.cpp.obj CMakeFiles/QuickOrder.dir/menu.cpp.obj CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/database.cpp.obj CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj | D$:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a || QuickOrder_autogen QuickOrder_autogen_timestamp_deps
+build QuickOrder.exe: CXX_EXECUTABLE_LINKER__QuickOrder_Debug CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj CMakeFiles/QuickOrder.dir/main.cpp.obj CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumer.cpp.obj CMakeFiles/QuickOrder.dir/ingredient.cpp.obj CMakeFiles/QuickOrder.dir/product.cpp.obj CMakeFiles/QuickOrder.dir/table.cpp.obj CMakeFiles/QuickOrder.dir/menu.cpp.obj CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/database.cpp.obj CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj CMakeFiles/QuickOrder.dir/orderregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/productlistmenu.cpp.obj | D$:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a D$:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a || QuickOrder_autogen QuickOrder_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = D:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a  D:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a  D:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  D:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QuickOrder.dir

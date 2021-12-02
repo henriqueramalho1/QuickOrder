@@ -61,3 +61,36 @@ void OrderRegisterMenu::on_tableSelection_currentTextChanged(const QString &arg1
     loadCostumers(ui->tableSelection->currentText());
 }
 
+
+void OrderRegisterMenu::on_costumerSelection_itemDoubleClicked(QListWidgetItem *item)
+{
+    QString name = item->text();
+    QString tableId = ui->tableSelection->currentText();
+    QSqlQuery query;
+
+    std::cout << name.toStdString() << std::endl;
+    std::cout << tableId.toStdString() << std::endl;
+
+    query.prepare("select * from costumer_tb where costumer_table = "+tableId+" and name = '"+name+"'");
+
+    if(query.exec())
+    {
+        while(query.next())
+        {
+            int id = query.value(0).toInt();
+        }
+    }
+
+    hide();
+
+    ProductListMenu* productListMenu = new ProductListMenu(nullptr);
+
+    productListMenu->show();
+
+    QEventLoop loop;
+    connect(productListMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
+    loop.exec();
+
+    show();
+}
+

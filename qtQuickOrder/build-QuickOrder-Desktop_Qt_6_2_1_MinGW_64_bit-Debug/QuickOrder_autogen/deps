@@ -254,6 +254,7 @@ QuickOrder_autogen/timestamp: \
 	D:/Qt/6.2.1/mingw81_64/include/QtSql/qtsql-config.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtSql/qtsqlglobal.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtSql/qtsqlversion.h \
+	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/QListWidget \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/QWidget \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qabstractitemview.h \
@@ -263,6 +264,7 @@ QuickOrder_autogen/timestamp: \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qcombobox.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qframe.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlistview.h \
+	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qlistwidget.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qrubberband.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qsizepolicy.h \
 	D:/Qt/6.2.1/mingw81_64/include/QtWidgets/qslider.h \
@@ -640,6 +642,8 @@ QuickOrder_autogen/timestamp: \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/orderstatusmenu.h \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/product.cpp \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/product.h \
+	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.cpp \
+	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.h \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.cpp \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.h \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/table.cpp \
@@ -656,6 +660,7 @@ QuickOrder_autogen/timestamp: \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/mainmenu.ui \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/orderregistermenu.ui \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/orderstatusmenu.ui \
+	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.ui \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.ui \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/tablelistmenu.ui \
 	D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.ui \

@@ -324,6 +324,12 @@
 			null
 		],
 		[
+			"D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.h",
+			"MU",
+			"EWIEGA46WW/moc_productlistmenu.cpp",
+			null
+		],
+		[
 			"D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.h",
 			"MU",
 			"EWIEGA46WW/moc_productregistermenu.cpp",
@@ -461,6 +467,11 @@
 		],
 		[
 			"D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/product.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/productlistmenu.cpp",
 			"MU",
 			null
 		],

@@ -5,7 +5,8 @@
 
 #include <iostream>
 
-CostumerRegisterMenu::CostumerRegisterMenu(QWidget *parent): Menu(parent), ui(new Ui::CostumerRegisterMenu){
+CostumerRegisterMenu::CostumerRegisterMenu(QWidget *parent): Menu(parent), ui(new Ui::CostumerRegisterMenu)
+{
     ui->setupUi(this);
 }
 
@@ -13,6 +14,24 @@ CostumerRegisterMenu::~CostumerRegisterMenu(){
     delete ui;
 }
 
+void CostumerRegisterMenu::loadCostumers(QString tableId)
+{
+    ui->costumerWidget->clear();
+
+    QSqlQuery query;
+
+    query.prepare("select * from costumer_tb where costumer_table = "+tableId+"");
+
+    if(query.exec())
+    {
+        while(query.next())
+        {
+            QString name = query.value(1).toString();
+            ui->costumerWidget->addItem(name);
+        }
+    }
+
+}
 
 void CostumerRegisterMenu::on_backButton_clicked()
 {
@@ -27,8 +46,8 @@ void CostumerRegisterMenu::on_registerButton_clicked()
 
     addToDatabase(name, tableId);
 
-    ui->tableSelect->clear();
     ui->nameInput->clear();
+    loadCostumers(QString::fromStdString(std::to_string(ui->tableSelect->value())));
 }
 
 void CostumerRegisterMenu::addToDatabase(QString name, int tableId)
@@ -65,7 +84,7 @@ bool CostumerRegisterMenu::isTableRegistered(int tableId)
             if(query.value(0) == tableId && query.value(1) == 1)
             {
                 tableIdRegistered = true;
-                break;
+                return tableIdRegistered;
             }
         }
     }
@@ -73,6 +92,16 @@ bool CostumerRegisterMenu::isTableRegistered(int tableId)
     if(!tableIdRegistered)
     {
         QMessageBox::warning(this, "", "A mesa selecionada não está cadastrada ou ativa!");
-        return false;
     }
+
+    return false;
 }
+
+void CostumerRegisterMenu::on_tableSelect_textChanged(const QString &arg1)
+{
+    int i = ui->tableSelect->value();
+    QString tableId;
+    tableId = QString::fromStdString(std::to_string(i));
+    loadCostumers(tableId);
+}
+

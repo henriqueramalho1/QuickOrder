@@ -2,7 +2,8 @@
 #define ORDERREGISTERMENU_H
 
 #include "menu.h"
-#include <QObject>
+#include <QListWidget>
+#include "productlistmenu.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class OrderRegisterMenu; }
@@ -22,6 +23,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_tableSelection_currentTextChanged(const QString &arg1);
+
+    void on_costumerSelection_itemDoubleClicked(QListWidgetItem *item);
 
 private:
     Ui::OrderRegisterMenu *ui;

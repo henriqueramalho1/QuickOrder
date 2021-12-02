@@ -17,12 +17,15 @@ public:
     virtual ~CostumerRegisterMenu();
     void addToDatabase(QString name, int tableId);
     bool isTableRegistered(int tableId);
+    void loadCostumers(QString tableId);
 
 private slots:
 
     void on_backButton_clicked();
 
     void on_registerButton_clicked();
+
+    void on_tableSelect_textChanged(const QString &arg1);
 
 private:
     Ui::CostumerRegisterMenu *ui;
