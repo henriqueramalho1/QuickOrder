@@ -145,6 +145,14 @@ build CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj: CXX_COMPILER__QuickOrde
   OBJECT_DIR = CMakeFiles\QuickOrder.dir
   OBJECT_FILE_DIR = CMakeFiles\QuickOrder.dir
 
+build CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj: CXX_COMPILER__QuickOrder_Debug F$:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.cpp || cmake_object_order_depends_target_QuickOrder
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0601 -D_WIN64
+  DEP_FILE = CMakeFiles\QuickOrder.dir\updateinventorymenu.cpp.obj.d
+  FLAGS = -g -Wno-error=invalid-offsetof -std=gnu++17
+  INCLUDES = -IF:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug -IF:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder -IF:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/QuickOrder_autogen/include -isystem C:/Qt/6.2.1/mingw81_64/include/QtCore -isystem C:/Qt/6.2.1/mingw81_64/include -isystem C:/Qt/6.2.1/mingw81_64/mkspecs/win32-g++ -isystem C:/Qt/6.2.1/mingw81_64/include/QtWidgets -isystem C:/Qt/6.2.1/mingw81_64/include/QtGui -isystem C:/Qt/6.2.1/mingw81_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\QuickOrder.dir
+  OBJECT_FILE_DIR = CMakeFiles\QuickOrder.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target QuickOrder
@@ -153,7 +161,7 @@ build CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj: CXX_COMPILER__QuickOrde
 #############################################
 # Link the executable QuickOrder.exe
 
-build QuickOrder.exe: CXX_EXECUTABLE_LINKER__QuickOrder_Debug CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj CMakeFiles/QuickOrder.dir/main.cpp.obj CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumer.cpp.obj CMakeFiles/QuickOrder.dir/ingredient.cpp.obj CMakeFiles/QuickOrder.dir/product.cpp.obj CMakeFiles/QuickOrder.dir/table.cpp.obj CMakeFiles/QuickOrder.dir/menu.cpp.obj CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj | C$:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a || QuickOrder_autogen QuickOrder_autogen_timestamp_deps
+build QuickOrder.exe: CXX_EXECUTABLE_LINKER__QuickOrder_Debug CMakeFiles/QuickOrder.dir/QuickOrder_autogen/mocs_compilation.cpp.obj CMakeFiles/QuickOrder.dir/main.cpp.obj CMakeFiles/QuickOrder.dir/mainmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumer.cpp.obj CMakeFiles/QuickOrder.dir/ingredient.cpp.obj CMakeFiles/QuickOrder.dir/product.cpp.obj CMakeFiles/QuickOrder.dir/table.cpp.obj CMakeFiles/QuickOrder.dir/menu.cpp.obj CMakeFiles/QuickOrder.dir/productregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/tablelistmenu.cpp.obj CMakeFiles/QuickOrder.dir/costumerregistermenu.cpp.obj CMakeFiles/QuickOrder.dir/orderstatusmenu.cpp.obj CMakeFiles/QuickOrder.dir/updateinventorymenu.cpp.obj | C$:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a C$:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a || QuickOrder_autogen QuickOrder_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/6.2.1/mingw81_64/lib/libQt6Widgets.a  C:/Qt/6.2.1/mingw81_64/lib/libQt6Sql.a  C:/Qt/6.2.1/mingw81_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  C:/Qt/6.2.1/mingw81_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QuickOrder.dir
@@ -197,7 +205,7 @@ build QuickOrder_autogen_timestamp_deps: phony CMakeFiles/QuickOrder_autogen_tim
 #############################################
 # Utility command for QuickOrder_autogen
 
-build QuickOrder_autogen: phony CMakeFiles/QuickOrder_autogen QuickOrder_autogen/include/ui_costumerregistermenu.h QuickOrder_autogen/include/ui_mainmenu.h QuickOrder_autogen/include/ui_productregistermenu.h QuickOrder_autogen/include/ui_tablelistmenu.h QuickOrder_autogen/timestamp QuickOrder_autogen/mocs_compilation.cpp QuickOrder_autogen_timestamp_deps
+build QuickOrder_autogen: phony CMakeFiles/QuickOrder_autogen QuickOrder_autogen/include/ui_costumerregistermenu.h QuickOrder_autogen/include/ui_mainmenu.h QuickOrder_autogen/include/ui_orderstatusmenu.h QuickOrder_autogen/include/ui_productregistermenu.h QuickOrder_autogen/include/ui_tablelistmenu.h QuickOrder_autogen/timestamp QuickOrder_autogen/mocs_compilation.cpp QuickOrder_autogen_timestamp_deps
 
 
 #############################################
@@ -213,13 +221,13 @@ build QuickOrder_autogen/timestamp QuickOrder_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Phony custom command for CMakeFiles\QuickOrder_autogen_timestamp_deps
 
-build CMakeFiles/QuickOrder_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen_timestamp_deps: phony C$:/Qt/6.2.1/mingw81_64/bin/Qt6Core.dll C$:/Qt/6.2.1/mingw81_64/./bin/uic.exe C$:/Qt/6.2.1/mingw81_64/./bin/moc.exe C$:/Qt/6.2.1/mingw81_64/bin/Qt6Sql.dll C$:/Qt/6.2.1/mingw81_64/bin/Qt6Widgets.dll
+build CMakeFiles/QuickOrder_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen_timestamp_deps: phony C$:/Qt/6.2.1/mingw81_64/./bin/uic.exe C$:/Qt/6.2.1/mingw81_64/bin/Qt6Core.dll C$:/Qt/6.2.1/mingw81_64/./bin/moc.exe C$:/Qt/6.2.1/mingw81_64/bin/Qt6Widgets.dll C$:/Qt/6.2.1/mingw81_64/bin/Qt6Sql.dll
 
 
 #############################################
 # Phony custom command for CMakeFiles\QuickOrder_autogen
 
-build CMakeFiles/QuickOrder_autogen QuickOrder_autogen/include/ui_costumerregistermenu.h QuickOrder_autogen/include/ui_mainmenu.h QuickOrder_autogen/include/ui_productregistermenu.h QuickOrder_autogen/include/ui_tablelistmenu.h | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_costumerregistermenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_mainmenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_productregistermenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_tablelistmenu.h: phony QuickOrder_autogen/timestamp || QuickOrder_autogen_timestamp_deps
+build CMakeFiles/QuickOrder_autogen QuickOrder_autogen/include/ui_costumerregistermenu.h QuickOrder_autogen/include/ui_mainmenu.h QuickOrder_autogen/include/ui_orderstatusmenu.h QuickOrder_autogen/include/ui_productregistermenu.h QuickOrder_autogen/include/ui_tablelistmenu.h | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_costumerregistermenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_mainmenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_orderstatusmenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_productregistermenu.h ${cmake_ninja_workdir}QuickOrder_autogen/include/ui_tablelistmenu.h: phony QuickOrder_autogen/timestamp || QuickOrder_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

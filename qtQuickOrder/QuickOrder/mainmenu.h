@@ -31,6 +31,8 @@ private slots:
 
     void on_orderStatusButton_clicked();
 
+    void on_updateInventoryButton_clicked();
+
 private:
     Ui::MainMenu *ui;
 

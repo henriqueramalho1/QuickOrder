@@ -4,6 +4,7 @@
 #include "tablelistmenu.h"
 #include "costumerregistermenu.h"
 #include "orderstatusmenu.h"
+#include "updateinventorymenu.h"
 #include <QEventLoop>
 
 MainMenu::MainMenu(QWidget *parent): Menu(parent), ui(new Ui::MainMenu){
@@ -83,5 +84,20 @@ void MainMenu::on_orderStatusButton_clicked()
 
     show();
 
+}
+
+
+void MainMenu::on_updateInventoryButton_clicked()
+{
+    hide();
+
+    Menu* updateInventoryMenu = new UpdateInventoryMenu(nullptr);
+    updateInventoryMenu->show();
+
+    QEventLoop loop;
+    connect(updateInventoryMenu, SIGNAL(destroyed()), &loop, SLOT(quit()));
+    loop.exec();
+
+    show();
 }
 

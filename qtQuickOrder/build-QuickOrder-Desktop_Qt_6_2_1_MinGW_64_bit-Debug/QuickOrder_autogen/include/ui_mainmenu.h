@@ -27,11 +27,8 @@ public:
     QPushButton *orderButton;
     QPushButton *closeCostumerButton;
     QPushButton *orderStatusButton;
-    QPushButton *cancelOrderButton;
-    QPushButton *pushButton_7;
     QPushButton *updateTableStatusButton;
     QPushButton *updateInventoryButton;
-    QPushButton *showOrdersButton;
     QPushButton *backButton;
 
     void setupUi(QWidget *MainMenu)
@@ -70,16 +67,6 @@ public:
 
         verticalLayout->addWidget(orderStatusButton);
 
-        cancelOrderButton = new QPushButton(layoutWidget);
-        cancelOrderButton->setObjectName(QString::fromUtf8("cancelOrderButton"));
-
-        verticalLayout->addWidget(cancelOrderButton);
-
-        pushButton_7 = new QPushButton(layoutWidget);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-
-        verticalLayout->addWidget(pushButton_7);
-
         updateTableStatusButton = new QPushButton(layoutWidget);
         updateTableStatusButton->setObjectName(QString::fromUtf8("updateTableStatusButton"));
 
@@ -89,11 +76,6 @@ public:
         updateInventoryButton->setObjectName(QString::fromUtf8("updateInventoryButton"));
 
         verticalLayout->addWidget(updateInventoryButton);
-
-        showOrdersButton = new QPushButton(layoutWidget);
-        showOrdersButton->setObjectName(QString::fromUtf8("showOrdersButton"));
-
-        verticalLayout->addWidget(showOrdersButton);
 
         backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
@@ -113,12 +95,9 @@ public:
         addCostumerButton->setText(QCoreApplication::translate("MainMenu", "Adicionar consumidor", nullptr));
         orderButton->setText(QCoreApplication::translate("MainMenu", "Efetuar pedido", nullptr));
         closeCostumerButton->setText(QCoreApplication::translate("MainMenu", "Fechar conta", nullptr));
-        orderStatusButton->setText(QCoreApplication::translate("MainMenu", "Verificar status de pedido", nullptr));
-        cancelOrderButton->setText(QCoreApplication::translate("MainMenu", "Cancelar pedido", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("MainMenu", "Atualizar status do pedido", nullptr));
+        orderStatusButton->setText(QCoreApplication::translate("MainMenu", "Listar pedidos", nullptr));
         updateTableStatusButton->setText(QCoreApplication::translate("MainMenu", "Atualizar status da mesa", nullptr));
         updateInventoryButton->setText(QCoreApplication::translate("MainMenu", "Atualizar estoque", nullptr));
-        showOrdersButton->setText(QCoreApplication::translate("MainMenu", "Exibir pedidos", nullptr));
         backButton->setText(QCoreApplication::translate("MainMenu", "Sair", nullptr));
     } // retranslateUi
 

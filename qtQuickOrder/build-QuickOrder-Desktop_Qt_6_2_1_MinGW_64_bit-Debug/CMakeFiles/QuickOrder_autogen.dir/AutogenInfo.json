@@ -328,6 +328,12 @@
 			"MU",
 			"EWIEGA46WW/moc_tablelistmenu.cpp",
 			null
+		],
+		[
+			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.h",
+			"MU",
+			"EWIEGA46WW/moc_updateinventorymenu.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -448,6 +454,11 @@
 		],
 		[
 			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/tablelistmenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.cpp",
 			"MU",
 			null
 		]

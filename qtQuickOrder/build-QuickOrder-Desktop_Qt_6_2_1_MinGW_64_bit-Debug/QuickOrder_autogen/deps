@@ -414,6 +414,8 @@ QuickOrder_autogen/timestamp: \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/table.h \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/tablelistmenu.cpp \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/tablelistmenu.h \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.cpp \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.h \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/CMakeFiles/3.21.1/CMakeSystem.cmake \
@@ -423,4 +425,5 @@ QuickOrder_autogen/timestamp: \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/orderstatusmenu.ui \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/productregistermenu.ui \
 	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/tablelistmenu.ui \
+	F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder/updateinventorymenu.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe
