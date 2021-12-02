@@ -3,7 +3,7 @@
 Database::Database()
 {
     QSqlDatabase database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder/database/quickdb.db");
+    database.setDatabaseName("../QuickOrder/database/quickdb.db");
 
     if(!database.open())
     {

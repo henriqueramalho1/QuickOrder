@@ -24,8 +24,8 @@ QT_BEGIN_NAMESPACE
 class Ui_UpdateInventoryMenu
 {
 public:
-    QListWidget *listWidget;
-    QWidget *widget;
+    QListWidget *inventoryListWidget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QDoubleSpinBox *quantityDoubleSpinBox;
     QLabel *label;
@@ -39,41 +39,41 @@ public:
         if (UpdateInventoryMenu->objectName().isEmpty())
             UpdateInventoryMenu->setObjectName(QString::fromUtf8("UpdateInventoryMenu"));
         UpdateInventoryMenu->resize(400, 300);
-        listWidget = new QListWidget(UpdateInventoryMenu);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(10, 20, 381, 221));
-        widget = new QWidget(UpdateInventoryMenu);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 250, 381, 44));
-        gridLayout = new QGridLayout(widget);
+        inventoryListWidget = new QListWidget(UpdateInventoryMenu);
+        inventoryListWidget->setObjectName(QString::fromUtf8("inventoryListWidget"));
+        inventoryListWidget->setGeometry(QRect(10, 20, 381, 221));
+        layoutWidget = new QWidget(UpdateInventoryMenu);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 250, 381, 44));
+        gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        quantityDoubleSpinBox = new QDoubleSpinBox(widget);
+        quantityDoubleSpinBox = new QDoubleSpinBox(layoutWidget);
         quantityDoubleSpinBox->setObjectName(QString::fromUtf8("quantityDoubleSpinBox"));
 
         gridLayout->addWidget(quantityDoubleSpinBox, 1, 2, 1, 1);
 
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         gridLayout->addWidget(label, 0, 1, 1, 1);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         gridLayout->addWidget(label_2, 0, 2, 1, 1);
 
-        updateButton = new QPushButton(widget);
+        updateButton = new QPushButton(layoutWidget);
         updateButton->setObjectName(QString::fromUtf8("updateButton"));
 
         gridLayout->addWidget(updateButton, 1, 3, 1, 1);
 
-        nameInput = new QLineEdit(widget);
+        nameInput = new QLineEdit(layoutWidget);
         nameInput->setObjectName(QString::fromUtf8("nameInput"));
 
         gridLayout->addWidget(nameInput, 1, 1, 1, 1);
 
-        backButton = new QPushButton(widget);
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         gridLayout->addWidget(backButton, 1, 0, 1, 1);
