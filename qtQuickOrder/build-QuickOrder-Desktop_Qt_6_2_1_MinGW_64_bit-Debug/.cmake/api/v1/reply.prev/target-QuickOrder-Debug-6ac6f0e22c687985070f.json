@@ -210,11 +210,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "QuickOrder_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "QuickOrder_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "QuickOrder_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "QuickOrder::@6890427a1f51a3e7e1df",

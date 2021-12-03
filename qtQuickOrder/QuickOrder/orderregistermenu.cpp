@@ -68,6 +68,8 @@ void OrderRegisterMenu::on_costumerSelection_itemDoubleClicked(QListWidgetItem *
     QString tableId = ui->tableSelection->currentText();
     QSqlQuery query;
 
+    int id;
+
     std::cout << name.toStdString() << std::endl;
     std::cout << tableId.toStdString() << std::endl;
 
@@ -77,13 +79,13 @@ void OrderRegisterMenu::on_costumerSelection_itemDoubleClicked(QListWidgetItem *
     {
         while(query.next())
         {
-            int id = query.value(0).toInt();
+            id = query.value(0).toInt();
         }
     }
 
     hide();
 
-    ProductListMenu* productListMenu = new ProductListMenu(nullptr);
+    ProductListMenu* productListMenu = new ProductListMenu(nullptr, id);
 
     productListMenu->show();
 

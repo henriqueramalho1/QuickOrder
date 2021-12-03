@@ -11,11 +11,16 @@ class ProductListMenu : public Menu
 {
     Q_OBJECT
 public:
-    ProductListMenu(QWidget* parent = nullptr);
+    ProductListMenu(QWidget* parent = nullptr, int i = -1);
     virtual ~ProductListMenu();
+    void loadProducts();
+
+private slots:
+    void on_backPushButton_clicked();
 
 private:
        Ui::ProductListMenu *ui;
+       int costumerId;
 };
 
 #endif // PRODUCTLISTMENU_H

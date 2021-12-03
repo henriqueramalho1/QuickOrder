@@ -245,7 +245,7 @@ build QuickOrder_autogen/timestamp QuickOrder_autogen/mocs_compilation.cpp | ${c
 #############################################
 # Phony custom command for CMakeFiles\QuickOrder_autogen_timestamp_deps
 
-build CMakeFiles/QuickOrder_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen_timestamp_deps: phony D$:/Qt/6.2.1/mingw81_64/bin/Qt6Core.dll D$:/Qt/6.2.1/mingw81_64/./bin/moc.exe D$:/Qt/6.2.1/mingw81_64/./bin/uic.exe D$:/Qt/6.2.1/mingw81_64/bin/Qt6Widgets.dll D$:/Qt/6.2.1/mingw81_64/bin/Qt6Sql.dll
+build CMakeFiles/QuickOrder_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QuickOrder_autogen_timestamp_deps: phony D$:/Qt/6.2.1/mingw81_64/./bin/uic.exe D$:/Qt/6.2.1/mingw81_64/bin/Qt6Core.dll D$:/Qt/6.2.1/mingw81_64/./bin/moc.exe D$:/Qt/6.2.1/mingw81_64/bin/Qt6Widgets.dll D$:/Qt/6.2.1/mingw81_64/bin/Qt6Sql.dll
 
 
 #############################################
