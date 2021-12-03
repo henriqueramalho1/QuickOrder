@@ -18,6 +18,7 @@ public:
     void addToDatabase(QString name, int tableId);
     bool isTableRegistered(int tableId);
     void loadCostumers(QString tableId);
+    void updateTableStatus(QString tableId);
 
 private slots:
 

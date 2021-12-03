@@ -103,5 +103,31 @@ void CostumerRegisterMenu::on_tableSelect_textChanged(const QString &arg1)
     QString tableId;
     tableId = QString::fromStdString(std::to_string(i));
     loadCostumers(tableId);
+    updateTableStatus(tableId);
+
+
 }
+
+ void CostumerRegisterMenu::updateTableStatus(QString tableId)
+ {
+     QSqlQuery query;
+     int status;
+     query.prepare("select status from table_tb where id = "+tableId+"");
+     if(query.exec())
+     {
+         while(query.next())
+         {
+            status = query.value(0).toInt();
+         }
+     }
+
+     if(status)
+     {
+        ui->modStatus->setText(QString("Ativa"));
+     }
+     else
+     {
+        ui->modStatus->setText(QString("Inativa"));
+     }
+ }
 

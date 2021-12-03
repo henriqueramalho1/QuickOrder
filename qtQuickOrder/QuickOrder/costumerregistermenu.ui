@@ -13,60 +13,92 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>11</y>
+     <x>10</x>
+     <y>10</y>
      <width>381</width>
-     <height>281</height>
+     <height>271</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
        <widget class="QLabel" name="label">
         <property name="text">
          <string>Nome do Consumidor</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
+      <item>
        <widget class="QLineEdit" name="nameInput">
         <property name="placeholderText">
          <string>Nome</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
          <string>Mesa</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item>
        <widget class="QSpinBox" name="tableSelect"/>
-      </item>
-      <item row="3" column="0" colspan="2">
-       <widget class="QListWidget" name="costumerWidget"/>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="registerButton">
-      <property name="text">
-       <string>Cadastrar</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="status">
+        <property name="text">
+         <string>Status:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="modStatus">
+        <property name="text">
+         <string>?</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="backButton">
-      <property name="text">
-       <string>Voltar</string>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListWidget" name="costumerWidget"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="registerButton">
+        <property name="text">
+         <string>Cadastrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="backButton">
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
