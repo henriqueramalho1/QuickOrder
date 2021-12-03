@@ -27,58 +27,59 @@ class Ui_ProductListMenu
 {
 public:
     QFrame *frame;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout_4;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
-    QVBoxLayout *verticalLayout;
+    QVBoxLayout *verticalLayout_4;
     QTreeWidget *productWidget;
     QPushButton *registerButton;
     QVBoxLayout *verticalLayout_2;
+    QVBoxLayout *verticalLayout;
     QTableWidget *orderWidget;
     QTextBrowser *textBrowser;
     QVBoxLayout *verticalLayout_3;
     QPushButton *addPushButton;
+    QPushButton *pushButton;
     QPushButton *backPushButton;
 
     void setupUi(QWidget *ProductListMenu)
     {
         if (ProductListMenu->objectName().isEmpty())
             ProductListMenu->setObjectName(QString::fromUtf8("ProductListMenu"));
-        ProductListMenu->resize(1056, 505);
+        ProductListMenu->resize(1171, 531);
         ProductListMenu->setInputMethodHints(Qt::ImhNoTextHandles);
         frame = new QFrame(ProductListMenu);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(30, 20, 981, 441));
+        frame->setGeometry(QRect(20, 20, 1121, 481));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(80, 20, 811, 411));
-        verticalLayout_4 = new QVBoxLayout(widget);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout = new QHBoxLayout();
+        layoutWidget = new QWidget(frame);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(50, 40, 1011, 391));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        productWidget = new QTreeWidget(widget);
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        productWidget = new QTreeWidget(layoutWidget);
         productWidget->setObjectName(QString::fromUtf8("productWidget"));
 
-        verticalLayout->addWidget(productWidget);
+        verticalLayout_4->addWidget(productWidget);
 
-        registerButton = new QPushButton(widget);
+        registerButton = new QPushButton(layoutWidget);
         registerButton->setObjectName(QString::fromUtf8("registerButton"));
 
-        verticalLayout->addWidget(registerButton);
+        verticalLayout_4->addWidget(registerButton);
 
 
-        horizontalLayout->addLayout(verticalLayout);
+        horizontalLayout->addLayout(verticalLayout_4);
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        orderWidget = new QTableWidget(widget);
-        if (orderWidget->columnCount() < 4)
-            orderWidget->setColumnCount(4);
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        orderWidget = new QTableWidget(layoutWidget);
+        if (orderWidget->columnCount() < 5)
+            orderWidget->setColumnCount(5);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
         orderWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
@@ -87,10 +88,8 @@ public:
         orderWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         orderWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
-        if (orderWidget->rowCount() < 3)
-            orderWidget->setRowCount(3);
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
-        orderWidget->setVerticalHeaderItem(0, __qtablewidgetitem4);
+        orderWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
         orderWidget->setObjectName(QString::fromUtf8("orderWidget"));
         orderWidget->setInputMethodHints(Qt::ImhNone);
         orderWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -100,38 +99,43 @@ public:
         orderWidget->setShowGrid(true);
         orderWidget->setSortingEnabled(false);
         orderWidget->setCornerButtonEnabled(true);
-        orderWidget->setRowCount(3);
+        orderWidget->setRowCount(0);
         orderWidget->horizontalHeader()->setVisible(true);
         orderWidget->verticalHeader()->setVisible(false);
         orderWidget->verticalHeader()->setCascadingSectionResizes(false);
 
-        verticalLayout_2->addWidget(orderWidget);
+        verticalLayout->addWidget(orderWidget);
 
-        textBrowser = new QTextBrowser(widget);
+        textBrowser = new QTextBrowser(layoutWidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
 
-        verticalLayout_2->addWidget(textBrowser);
+        verticalLayout->addWidget(textBrowser);
 
 
-        horizontalLayout->addLayout(verticalLayout_2);
-
-
-        verticalLayout_4->addLayout(horizontalLayout);
+        verticalLayout_2->addLayout(verticalLayout);
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        addPushButton = new QPushButton(widget);
+        addPushButton = new QPushButton(layoutWidget);
         addPushButton->setObjectName(QString::fromUtf8("addPushButton"));
 
         verticalLayout_3->addWidget(addPushButton);
 
-        backPushButton = new QPushButton(widget);
+        pushButton = new QPushButton(layoutWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        verticalLayout_3->addWidget(pushButton);
+
+        backPushButton = new QPushButton(layoutWidget);
         backPushButton->setObjectName(QString::fromUtf8("backPushButton"));
 
         verticalLayout_3->addWidget(backPushButton);
 
 
-        verticalLayout_4->addLayout(verticalLayout_3);
+        verticalLayout_2->addLayout(verticalLayout_3);
+
+
+        horizontalLayout->addLayout(verticalLayout_2);
 
 
         retranslateUi(ProductListMenu);
@@ -151,15 +155,16 @@ public:
         QTableWidgetItem *___qtablewidgetitem = orderWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("ProductListMenu", "Id", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = orderWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QCoreApplication::translate("ProductListMenu", "Quantidade", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("ProductListMenu", "Prato", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = orderWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QCoreApplication::translate("ProductListMenu", "Pre\303\247o", nullptr));
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("ProductListMenu", "Quantidade", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = orderWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QCoreApplication::translate("ProductListMenu", "Observa\303\247\303\243o", nullptr));
-        QTableWidgetItem *___qtablewidgetitem4 = orderWidget->verticalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QCoreApplication::translate("ProductListMenu", "Pizza", nullptr));
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("ProductListMenu", "Pre\303\247o", nullptr));
+        QTableWidgetItem *___qtablewidgetitem4 = orderWidget->horizontalHeaderItem(4);
+        ___qtablewidgetitem4->setText(QCoreApplication::translate("ProductListMenu", "Observa\303\247\303\243o", nullptr));
         textBrowser->setPlaceholderText(QCoreApplication::translate("ProductListMenu", "Adicione observa\303\247\303\243o  do pedido", nullptr));
         addPushButton->setText(QCoreApplication::translate("ProductListMenu", "Adicionar coment\303\241rio", nullptr));
+        pushButton->setText(QCoreApplication::translate("ProductListMenu", "Remover Pedido", nullptr));
         backPushButton->setText(QCoreApplication::translate("ProductListMenu", "Voltar", nullptr));
     } // retranslateUi
 

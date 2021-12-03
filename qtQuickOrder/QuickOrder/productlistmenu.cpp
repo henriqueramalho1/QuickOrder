@@ -6,11 +6,13 @@ ProductListMenu::ProductListMenu(QWidget* parent, int i):
 {
     ui->setupUi(this);
     loadProducts();
+    loadOrders();
 }
 
 ProductListMenu::~ProductListMenu()
 {
     ui->productWidget->clear();
+    ui->orderWidget->clear();
     delete ui;
 }
 
@@ -65,5 +67,101 @@ void ProductListMenu::loadProducts()
             }
         }
     }
+}
+
+void ProductListMenu::loadOrders()
+{
+    ui->orderWidget->clear();
+
+    QSqlQuery query;
+    QString costumer_id;
+    costumer_id = QString::fromStdString(std::to_string(costumerId));
+    QString productId;
+    QString productName;
+
+    query.prepare("select * from order_tb where costumer_id = "+costumer_id+"");
+
+    if(query.exec())
+    {
+
+        while(query.next())
+        {
+            productId= query.value(2).toString();
+
+            QSqlQuery query2;
+            query2.prepare("select name from order_tb inner join product_tb on product_tb.id = order_tb.product_id where product_id = "+productId+"");
+            if(query2.exec())
+            {
+                while(query2.next())
+                {
+                    productName = query2.value(0).toString();
+                }
+            }
+
+            ui->orderWidget->insertRow(ui->orderWidget->rowCount());
+
+            QTableWidgetItem* TId = new QTableWidgetItem();
+            TId->setText(productId);
+            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 0, TId);
+
+            QTableWidgetItem* TName = new QTableWidgetItem();
+            TName->setText(productName);
+            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 1, TName);
+
+            QTableWidgetItem* TQnt = new QTableWidgetItem();
+            TQnt->setText(QString(query.value(4).toString()));
+            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 2, TQnt);
+
+            QTableWidgetItem* TPrice = new QTableWidgetItem();
+            TPrice->setText(QString(query.value(5).toString()));
+            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 3, TPrice);
+
+            QTableWidgetItem* TObs = new QTableWidgetItem();
+            TObs->setText(QString(query.value(3).toString()));
+            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 4, TObs);
+
+
+        }
+    }
+}
+
+void ProductListMenu::on_registerButton_clicked()
+{
+    QList<QTreeWidgetItem*> itemList = ui->productWidget->selectedItems();
+    QSqlQuery query;
+    QString productId;
+    QString productName;
+    QString costumer_id;
+    costumer_id = QString::fromStdString(std::to_string(costumerId));
+
+    for(auto it = itemList.begin(); it != itemList.end(); it++)
+    {
+        productName = (*it)->text(0);
+    }
+
+    std::cout << productName.toStdString() << std::endl;
+
+    query.prepare("insert into order_tb (costumer_id, product_id, obs, quantity, price) values(?, ?, ?, ?, ?)");
+    query.addBindValue(costumer_id);
+
+    QSqlQuery productQuery;
+    productQuery.prepare("select id from product_tb where name = '"+productName+"'");
+
+    if(productQuery.exec())
+    {
+        std::cout << "selecting" << std::endl;
+        while(productQuery.next())
+        {
+            productId = productQuery.value(0).toString();
+        }
+    }
+
+    query.addBindValue(productId);
+    query.addBindValue(QString("-"));
+    query.addBindValue(QString("1"));
+    query.addBindValue(10.00);
+    query.exec();
+
+    loadOrders();
 }
 

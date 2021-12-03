@@ -14,9 +14,12 @@ public:
     ProductListMenu(QWidget* parent = nullptr, int i = -1);
     virtual ~ProductListMenu();
     void loadProducts();
+    void loadOrders();
 
 private slots:
     void on_backPushButton_clicked();
+
+    void on_registerButton_clicked();
 
 private:
        Ui::ProductListMenu *ui;

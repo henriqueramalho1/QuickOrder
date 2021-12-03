@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1056</width>
-    <height>505</height>
+    <width>1171</width>
+    <height>531</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,10 +22,10 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>20</y>
-     <width>981</width>
-     <height>441</height>
+     <width>1121</width>
+     <height>481</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -34,40 +34,40 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>20</y>
-      <width>811</width>
-      <height>411</height>
+      <x>50</x>
+      <y>40</y>
+      <width>1011</width>
+      <height>391</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QTreeWidget" name="productWidget">
-           <column>
-            <property name="text">
-             <string>Pratos</string>
-            </property>
-           </column>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="registerButton">
-           <property name="text">
-            <string>Registrar Pedido</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QTreeWidget" name="productWidget">
+         <column>
+          <property name="text">
+           <string>Pratos</string>
+          </property>
+         </column>
+        </widget>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <widget class="QPushButton" name="registerButton">
+         <property name="text">
+          <string>Registrar Pedido</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
          <item>
           <widget class="QTableWidget" name="orderWidget">
            <property name="inputMethodHints">
@@ -95,7 +95,7 @@
             <bool>true</bool>
            </property>
            <property name="rowCount">
-            <number>3</number>
+            <number>0</number>
            </property>
            <attribute name="horizontalHeaderVisible">
             <bool>true</bool>
@@ -106,16 +106,14 @@
            <attribute name="verticalHeaderCascadingSectionResizes">
             <bool>false</bool>
            </attribute>
-           <row>
-            <property name="text">
-             <string>Pizza</string>
-            </property>
-           </row>
-           <row/>
-           <row/>
            <column>
             <property name="text">
              <string>Id</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Prato</string>
             </property>
            </column>
            <column>
@@ -144,23 +142,30 @@
          </item>
         </layout>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QPushButton" name="addPushButton">
-         <property name="text">
-          <string>Adicionar comentário</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="backPushButton">
-         <property name="text">
-          <string>Voltar</string>
-         </property>
-        </widget>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="addPushButton">
+           <property name="text">
+            <string>Adicionar comentário</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Remover Pedido</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="backPushButton">
+           <property name="text">
+            <string>Voltar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
