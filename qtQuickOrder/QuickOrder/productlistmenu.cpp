@@ -5,6 +5,7 @@ ProductListMenu::ProductListMenu(QWidget* parent, int i):
     Menu(parent), ui(new Ui::ProductListMenu), costumerId(i)
 {
     ui->setupUi(this);
+    ui->orderWidget->setSortingEnabled(false);
     loadProducts();
     loadOrders();
 }
@@ -71,7 +72,9 @@ void ProductListMenu::loadProducts()
 
 void ProductListMenu::loadOrders()
 {
-    ui->orderWidget->clear();
+    //ui->orderWidget->clear();
+    ui->orderWidget->clearSpans();
+    ui->orderWidget->setRowCount(0);
 
     QSqlQuery query;
     QString costumer_id;
@@ -101,26 +104,24 @@ void ProductListMenu::loadOrders()
             ui->orderWidget->insertRow(ui->orderWidget->rowCount());
 
             QTableWidgetItem* TId = new QTableWidgetItem();
-            TId->setText(productId);
-            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 0, TId);
+            TId->setText(query.value(0).toString());
+            ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 0, TId);
 
             QTableWidgetItem* TName = new QTableWidgetItem();
             TName->setText(productName);
-            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 1, TName);
+            ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 1, TName);
 
             QTableWidgetItem* TQnt = new QTableWidgetItem();
             TQnt->setText(QString(query.value(4).toString()));
-            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 2, TQnt);
+            ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 2, TQnt);
 
             QTableWidgetItem* TPrice = new QTableWidgetItem();
             TPrice->setText(QString(query.value(5).toString()));
-            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 3, TPrice);
+            ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 3, TPrice);
 
             QTableWidgetItem* TObs = new QTableWidgetItem();
             TObs->setText(QString(query.value(3).toString()));
-            ui->orderWidget->setItem(ui->orderWidget->rowCount() - 1, 4, TObs);
-
-
+            ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 4, TObs);
         }
     }
 }
