@@ -1,4 +1,4 @@
-# Install script for directory: D:/Repositorios/QuickOrder/qtQuickOrder/QuickOrder
+# Install script for directory: F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/QuickOrder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Qt/Tools/mingw810_64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Qt/Tools/mingw810_64/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Repositorios/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/Victor/projAnaliseSist/QuickOrder/qtQuickOrder/build-QuickOrder-Desktop_Qt_6_2_1_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
