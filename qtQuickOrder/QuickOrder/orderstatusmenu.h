@@ -19,6 +19,12 @@ public:
 private slots:
     void on_backButton_clicked();
 
+    void on_updateStatusButton_clicked();
+
+    void loadOrders();
+
+    void on_cancelOrderButton_clicked();
+
 private:
     Ui::OrderStatusMenu *ui;
     std::vector<Product*> orders;
