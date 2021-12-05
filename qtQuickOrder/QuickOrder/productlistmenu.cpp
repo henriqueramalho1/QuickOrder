@@ -166,3 +166,14 @@ void ProductListMenu::on_registerButton_clicked()
     loadOrders();
 }
 
+
+void ProductListMenu::on_pushButton_clicked()
+{
+   int orderId = (*ui->orderWidget->selectedItems().begin())->text().toInt();
+   QSqlQuery deleteQuery;
+   deleteQuery.prepare("delete from order_tb where id = "+QString::number(orderId)+"");
+   deleteQuery.exec();
+
+   loadOrders();
+}
+
