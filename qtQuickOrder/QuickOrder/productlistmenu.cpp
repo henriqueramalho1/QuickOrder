@@ -158,7 +158,7 @@ void ProductListMenu::on_registerButton_clicked()
     }
 
     query.addBindValue(productId);
-    query.addBindValue(QString("-"));
+    query.addBindValue(ui->noteInput->toPlainText());
     query.addBindValue(QString("1"));
     query.addBindValue(10.00);
     query.exec();
@@ -169,11 +169,28 @@ void ProductListMenu::on_registerButton_clicked()
 
 void ProductListMenu::on_pushButton_clicked()
 {
-   int orderId = (*ui->orderWidget->selectedItems().begin())->text().toInt();
-   QSqlQuery deleteQuery;
-   deleteQuery.prepare("delete from order_tb where id = "+QString::number(orderId)+"");
-   deleteQuery.exec();
+   if(ui->orderWidget->selectedItems().begin()){
+       int orderId = (*ui->orderWidget->selectedItems().begin())->text().toInt();
+       QSqlQuery deleteQuery;
+       deleteQuery.prepare("delete from order_tb where id = "+QString::number(orderId)+"");
+       deleteQuery.exec();
 
-   loadOrders();
+       loadOrders();
+   }
+}
+
+
+void ProductListMenu::on_addPushButton_clicked()
+{
+    if(ui->orderWidget->selectedItems().begin()){
+        int orderId = (*ui->orderWidget->selectedItems().begin())->text().toInt();
+        QSqlQuery updateQuery;
+        updateQuery.prepare("update order_tb set obs = '"+ui->noteInput->toPlainText()+"' where id = "+QString::number(orderId)+"");
+
+        updateQuery.exec();
+
+        loadOrders();
+    }
+
 }
 

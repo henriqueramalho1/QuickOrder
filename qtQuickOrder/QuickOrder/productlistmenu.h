@@ -23,6 +23,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_addPushButton_clicked();
+
 private:
        Ui::ProductListMenu *ui;
        int costumerId;

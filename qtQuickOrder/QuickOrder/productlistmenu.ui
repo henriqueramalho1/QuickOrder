@@ -134,7 +134,10 @@
           </widget>
          </item>
          <item>
-          <widget class="QTextBrowser" name="textBrowser">
+          <widget class="QTextBrowser" name="noteInput">
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
            <property name="placeholderText">
             <string>Adicione observação  do pedido</string>
            </property>
