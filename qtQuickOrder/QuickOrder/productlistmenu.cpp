@@ -1,5 +1,6 @@
 #include "productlistmenu.h"
 #include "./ui_productlistmenu.h"
+#include "QMessageBox"
 
 ProductListMenu::ProductListMenu(QWidget* parent, int i):
     Menu(parent), ui(new Ui::ProductListMenu), costumerId(i)
@@ -72,7 +73,6 @@ void ProductListMenu::loadProducts()
 
 void ProductListMenu::loadOrders()
 {
-    //ui->orderWidget->clear();
     ui->orderWidget->clearSpans();
     ui->orderWidget->setRowCount(0);
 
@@ -116,7 +116,7 @@ void ProductListMenu::loadOrders()
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 2, TQnt);
 
             QTableWidgetItem* TPrice = new QTableWidgetItem();
-            TPrice->setText(QString(query.value(5).toString()));
+            TPrice->setText(QString("R$"+query.value(5).toString()));
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 3, TPrice);
 
             QTableWidgetItem* TObs = new QTableWidgetItem();
@@ -133,6 +133,14 @@ void ProductListMenu::on_registerButton_clicked()
     QString productId;
     QString productName;
     QString costumer_id;
+    double price;
+
+    if(ui->productWidget->selectedItems().begin() == nullptr)
+    {
+        QMessageBox::warning(this, "", "Selecione um prato para registrar o pedido.");
+        return;
+    }
+
     costumer_id = QString::fromStdString(std::to_string(costumerId));
 
     for(auto it = itemList.begin(); it != itemList.end(); it++)
@@ -146,7 +154,7 @@ void ProductListMenu::on_registerButton_clicked()
     query.addBindValue(costumer_id);
 
     QSqlQuery productQuery;
-    productQuery.prepare("select id from product_tb where name = '"+productName+"'");
+    productQuery.prepare("select * from product_tb where name = '"+productName+"'");
 
     if(productQuery.exec())
     {
@@ -154,13 +162,14 @@ void ProductListMenu::on_registerButton_clicked()
         while(productQuery.next())
         {
             productId = productQuery.value(0).toString();
+            price = productQuery.value(7).toDouble();
         }
     }
 
     query.addBindValue(productId);
     query.addBindValue(ui->noteInput->toPlainText());
     query.addBindValue(QString("1"));
-    query.addBindValue(10.00);
+    query.addBindValue(price);
     query.exec();
 
     loadOrders();
@@ -191,6 +200,12 @@ void ProductListMenu::on_addPushButton_clicked()
 
         loadOrders();
     }
+    else
+    {
+        QMessageBox::warning(this, "", "Selecione um pedido para adicionar a observação");
+    }
+
+    ui->noteInput->clear();
 
 }
 

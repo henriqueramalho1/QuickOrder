@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets Sql REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets Sql printsupport REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -39,6 +39,8 @@ set(PROJECT_SOURCES
         orderregistermenu.ui
         productlistmenu.h productlistmenu.cpp
         productlistmenu.ui
+        billmenu.h billmenu.cpp
+        billmenu.ui
         )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -64,7 +66,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(QuickOrder PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt6::Sql)
+target_link_libraries(QuickOrder PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt6::Sql Qt6::PrintSupport)
 
 set_target_properties(QuickOrder PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

@@ -35,6 +35,8 @@ private slots:
 
     void on_orderButton_clicked();
 
+    void on_closeCostumerButton_clicked();
+
 private:
     Ui::MainMenu *ui;
 

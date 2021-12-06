@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -25,7 +26,7 @@ class Ui_ProductRegisterMenu
 {
 public:
     QFrame *frame;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label_2;
     QLineEdit *ingredientInput;
@@ -35,10 +36,12 @@ public:
     QLineEdit *ingredientInput_5;
     QPushButton *registerButton;
     QPushButton *backButton;
-    QWidget *widget1;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *nameInput;
+    QDoubleSpinBox *doubleSpinBox;
 
     void setupUi(QWidget *ProductRegisterMenu)
     {
@@ -50,71 +53,80 @@ public:
         frame->setGeometry(QRect(10, 10, 381, 281));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 60, 341, 209));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(frame);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(20, 60, 341, 209));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(label_2);
 
-        ingredientInput = new QLineEdit(widget);
+        ingredientInput = new QLineEdit(layoutWidget);
         ingredientInput->setObjectName(QString::fromUtf8("ingredientInput"));
 
         verticalLayout->addWidget(ingredientInput);
 
-        ingredientInput_2 = new QLineEdit(widget);
+        ingredientInput_2 = new QLineEdit(layoutWidget);
         ingredientInput_2->setObjectName(QString::fromUtf8("ingredientInput_2"));
 
         verticalLayout->addWidget(ingredientInput_2);
 
-        ingredientInput_3 = new QLineEdit(widget);
+        ingredientInput_3 = new QLineEdit(layoutWidget);
         ingredientInput_3->setObjectName(QString::fromUtf8("ingredientInput_3"));
 
         verticalLayout->addWidget(ingredientInput_3);
 
-        ingredientInput_4 = new QLineEdit(widget);
+        ingredientInput_4 = new QLineEdit(layoutWidget);
         ingredientInput_4->setObjectName(QString::fromUtf8("ingredientInput_4"));
 
         verticalLayout->addWidget(ingredientInput_4);
 
-        ingredientInput_5 = new QLineEdit(widget);
+        ingredientInput_5 = new QLineEdit(layoutWidget);
         ingredientInput_5->setObjectName(QString::fromUtf8("ingredientInput_5"));
 
         verticalLayout->addWidget(ingredientInput_5);
 
-        registerButton = new QPushButton(widget);
+        registerButton = new QPushButton(layoutWidget);
         registerButton->setObjectName(QString::fromUtf8("registerButton"));
 
         verticalLayout->addWidget(registerButton);
 
-        backButton = new QPushButton(widget);
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         verticalLayout->addWidget(backButton);
 
-        widget1 = new QWidget(frame);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(90, 20, 199, 24));
-        horizontalLayout = new QHBoxLayout(widget1);
+        widget = new QWidget(frame);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(20, 20, 341, 26));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget1);
+        label = new QLabel(widget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setAlignment(Qt::AlignCenter);
 
         horizontalLayout->addWidget(label);
 
-        nameInput = new QLineEdit(widget1);
+        nameInput = new QLineEdit(widget);
         nameInput->setObjectName(QString::fromUtf8("nameInput"));
 
         horizontalLayout->addWidget(nameInput);
 
-        frame->raise();
+
+        horizontalLayout_2->addLayout(horizontalLayout);
+
+        doubleSpinBox = new QDoubleSpinBox(widget);
+        doubleSpinBox->setObjectName(QString::fromUtf8("doubleSpinBox"));
+
+        horizontalLayout_2->addWidget(doubleSpinBox);
+
 
         retranslateUi(ProductRegisterMenu);
 

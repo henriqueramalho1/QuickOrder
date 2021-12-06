@@ -12,8 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QListWidget>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,22 +24,53 @@ class Ui_OrderStatusMenu
 public:
     QWidget *widget;
     QGridLayout *gridLayout;
+    QTableWidget *orderWidget;
     QPushButton *backButton;
     QPushButton *updateStatusButton;
     QPushButton *cancelOrderButton;
-    QListWidget *orderListWidget;
 
     void setupUi(QWidget *OrderStatusMenu)
     {
         if (OrderStatusMenu->objectName().isEmpty())
             OrderStatusMenu->setObjectName(QString::fromUtf8("OrderStatusMenu"));
-        OrderStatusMenu->resize(400, 300);
+        OrderStatusMenu->resize(624, 346);
         widget = new QWidget(OrderStatusMenu);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 381, 281));
+        widget->setGeometry(QRect(10, 10, 601, 321));
         gridLayout = new QGridLayout(widget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
+        orderWidget = new QTableWidget(widget);
+        if (orderWidget->columnCount() < 6)
+            orderWidget->setColumnCount(6);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        orderWidget->setHorizontalHeaderItem(5, __qtablewidgetitem5);
+        orderWidget->setObjectName(QString::fromUtf8("orderWidget"));
+        orderWidget->setInputMethodHints(Qt::ImhNone);
+        orderWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        orderWidget->setDragDropMode(QAbstractItemView::DragOnly);
+        orderWidget->setAlternatingRowColors(true);
+        orderWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+        orderWidget->setShowGrid(true);
+        orderWidget->setSortingEnabled(false);
+        orderWidget->setCornerButtonEnabled(true);
+        orderWidget->setRowCount(0);
+        orderWidget->horizontalHeader()->setVisible(true);
+        orderWidget->verticalHeader()->setVisible(false);
+        orderWidget->verticalHeader()->setCascadingSectionResizes(false);
+
+        gridLayout->addWidget(orderWidget, 0, 0, 1, 3);
+
         backButton = new QPushButton(widget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
@@ -54,11 +86,6 @@ public:
 
         gridLayout->addWidget(cancelOrderButton, 1, 2, 1, 1);
 
-        orderListWidget = new QListWidget(widget);
-        orderListWidget->setObjectName(QString::fromUtf8("orderListWidget"));
-
-        gridLayout->addWidget(orderListWidget, 0, 0, 1, 3);
-
 
         retranslateUi(OrderStatusMenu);
 
@@ -68,6 +95,18 @@ public:
     void retranslateUi(QWidget *OrderStatusMenu)
     {
         OrderStatusMenu->setWindowTitle(QCoreApplication::translate("OrderStatusMenu", "Form", nullptr));
+        QTableWidgetItem *___qtablewidgetitem = orderWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QCoreApplication::translate("OrderStatusMenu", "Id", nullptr));
+        QTableWidgetItem *___qtablewidgetitem1 = orderWidget->horizontalHeaderItem(1);
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("OrderStatusMenu", "Prato", nullptr));
+        QTableWidgetItem *___qtablewidgetitem2 = orderWidget->horizontalHeaderItem(2);
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("OrderStatusMenu", "Quantidade", nullptr));
+        QTableWidgetItem *___qtablewidgetitem3 = orderWidget->horizontalHeaderItem(3);
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("OrderStatusMenu", "Pre\303\247o", nullptr));
+        QTableWidgetItem *___qtablewidgetitem4 = orderWidget->horizontalHeaderItem(4);
+        ___qtablewidgetitem4->setText(QCoreApplication::translate("OrderStatusMenu", "Observa\303\247\303\243o", nullptr));
+        QTableWidgetItem *___qtablewidgetitem5 = orderWidget->horizontalHeaderItem(5);
+        ___qtablewidgetitem5->setText(QCoreApplication::translate("OrderStatusMenu", "Status", nullptr));
         backButton->setText(QCoreApplication::translate("OrderStatusMenu", "Voltar", nullptr));
         updateStatusButton->setText(QCoreApplication::translate("OrderStatusMenu", "Atualizar Status", nullptr));
         cancelOrderButton->setText(QCoreApplication::translate("OrderStatusMenu", "Cancelar Pedido", nullptr));

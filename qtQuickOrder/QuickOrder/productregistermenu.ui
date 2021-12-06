@@ -28,7 +28,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -105,38 +105,43 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>20</x>
       <y>20</y>
-      <width>199</width>
-      <height>24</height>
+      <width>341</width>
+      <height>26</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Nome do Produto</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Nome do Produto</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nameInput">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Nome do produto</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QLineEdit" name="nameInput">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="placeholderText">
-        <string>Nome do produto</string>
-       </property>
-      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
      </item>
     </layout>
    </widget>
   </widget>
-  <zorder>frame</zorder>
-  <zorder>verticalLayoutWidget</zorder>
  </widget>
  <resources/>
  <connections/>

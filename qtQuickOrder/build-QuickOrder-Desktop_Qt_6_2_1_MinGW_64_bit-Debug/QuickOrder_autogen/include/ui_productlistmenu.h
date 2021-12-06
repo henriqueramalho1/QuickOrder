@@ -35,7 +35,7 @@ public:
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QTableWidget *orderWidget;
-    QTextBrowser *textBrowser;
+    QTextBrowser *noteInput;
     QVBoxLayout *verticalLayout_3;
     QPushButton *addPushButton;
     QPushButton *pushButton;
@@ -106,10 +106,11 @@ public:
 
         verticalLayout->addWidget(orderWidget);
 
-        textBrowser = new QTextBrowser(layoutWidget);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        noteInput = new QTextBrowser(layoutWidget);
+        noteInput->setObjectName(QString::fromUtf8("noteInput"));
+        noteInput->setReadOnly(false);
 
-        verticalLayout->addWidget(textBrowser);
+        verticalLayout->addWidget(noteInput);
 
 
         verticalLayout_2->addLayout(verticalLayout);
@@ -162,7 +163,7 @@ public:
         ___qtablewidgetitem3->setText(QCoreApplication::translate("ProductListMenu", "Pre\303\247o", nullptr));
         QTableWidgetItem *___qtablewidgetitem4 = orderWidget->horizontalHeaderItem(4);
         ___qtablewidgetitem4->setText(QCoreApplication::translate("ProductListMenu", "Observa\303\247\303\243o", nullptr));
-        textBrowser->setPlaceholderText(QCoreApplication::translate("ProductListMenu", "Adicione observa\303\247\303\243o  do pedido", nullptr));
+        noteInput->setPlaceholderText(QCoreApplication::translate("ProductListMenu", "Adicione observa\303\247\303\243o  do pedido", nullptr));
         addPushButton->setText(QCoreApplication::translate("ProductListMenu", "Adicionar coment\303\241rio", nullptr));
         pushButton->setText(QCoreApplication::translate("ProductListMenu", "Remover Pedido", nullptr));
         backPushButton->setText(QCoreApplication::translate("ProductListMenu", "Voltar", nullptr));
