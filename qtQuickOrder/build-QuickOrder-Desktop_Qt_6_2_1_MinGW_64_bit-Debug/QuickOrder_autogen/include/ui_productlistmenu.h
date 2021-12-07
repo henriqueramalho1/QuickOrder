@@ -146,7 +146,7 @@ public:
 
     void retranslateUi(QWidget *ProductListMenu)
     {
-        ProductListMenu->setWindowTitle(QCoreApplication::translate("ProductListMenu", "Sele\303\247\303\243o de pratos", nullptr));
+        ProductListMenu->setWindowTitle(QCoreApplication::translate("ProductListMenu", "QuickOrder", nullptr));
 #if QT_CONFIG(accessibility)
         ProductListMenu->setAccessibleName(QString());
 #endif // QT_CONFIG(accessibility)

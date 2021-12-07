@@ -1,5 +1,6 @@
 #include "orderstatusmenu.h"
 #include "./ui_orderstatusmenu.h"
+#include <QMessageBox>
 
 #include <iostream>
 
@@ -87,7 +88,7 @@ void OrderStatusMenu::loadOrders()
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 4, TObs);
 
             QTableWidgetItem* TStatus = new QTableWidgetItem();
-            TStatus->setText(QString(query.value(6).toBool() ? "Em preparacao":"Em espera"));
+            TStatus->setText(QString(query.value(6).toBool() ? "Em preparação":"Em espera"));
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 5, TStatus);
         }
     }
@@ -98,9 +99,30 @@ void OrderStatusMenu::on_cancelOrderButton_clicked()
 {
     if(ui->orderWidget->selectedItems().begin()){
         int orderId = (*ui->orderWidget->selectedItems().begin())->text().toInt();
-        QSqlQuery deleteQuery;
-        deleteQuery.prepare("delete from order_tb where id = "+QString::number(orderId)+"");
-        deleteQuery.exec();
+
+        QSqlQuery query;
+        query.prepare("select status from order_tb where id = "+QString::number(orderId)+"");
+
+        query.exec();
+
+        bool status;
+
+        while(query.next())
+        {
+            status = query.value(0).toBool();
+        }
+
+        if(!status)
+        {
+            QSqlQuery deleteQuery;
+            deleteQuery.prepare("delete from order_tb where id = "+QString::number(orderId)+"");
+            deleteQuery.exec();
+        }
+        else
+        {
+            QMessageBox::warning(this, "", "Não foi possível cancelar. O pedido já está em preparação.");
+            return;
+        }
 
         loadOrders();
     }

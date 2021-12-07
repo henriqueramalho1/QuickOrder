@@ -90,7 +90,7 @@ public:
 
     void retranslateUi(QWidget *MainMenu)
     {
-        MainMenu->setWindowTitle(QCoreApplication::translate("MainMenu", "MainMenu", nullptr));
+        MainMenu->setWindowTitle(QCoreApplication::translate("MainMenu", "QuickOrder", nullptr));
         registerProductButton->setText(QCoreApplication::translate("MainMenu", "Cadastrar prato", nullptr));
         addCostumerButton->setText(QCoreApplication::translate("MainMenu", "Adicionar consumidor", nullptr));
         orderButton->setText(QCoreApplication::translate("MainMenu", "Efetuar pedido", nullptr));

@@ -141,7 +141,7 @@ public:
 
     void retranslateUi(QWidget *BillMenu)
     {
-        BillMenu->setWindowTitle(QCoreApplication::translate("BillMenu", "Form", nullptr));
+        BillMenu->setWindowTitle(QCoreApplication::translate("BillMenu", "QuickOrder", nullptr));
         label->setText(QCoreApplication::translate("BillMenu", "Selecione a mesa do consumidor", nullptr));
         label_2->setText(QCoreApplication::translate("BillMenu", "Consumidores cadastrados", nullptr));
         pushButton->setText(QCoreApplication::translate("BillMenu", "Voltar", nullptr));

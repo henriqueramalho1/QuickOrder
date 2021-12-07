@@ -25,7 +25,7 @@ class Ui_OrderRegisterMenu
 {
 public:
     QFrame *frame;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QComboBox *tableSelection;
@@ -43,35 +43,35 @@ public:
         frame->setGeometry(QRect(10, 10, 381, 281));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 10, 341, 251));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(frame);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(20, 10, 341, 251));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(label);
 
-        tableSelection = new QComboBox(widget);
+        tableSelection = new QComboBox(layoutWidget);
         tableSelection->setObjectName(QString::fromUtf8("tableSelection"));
 
         verticalLayout->addWidget(tableSelection);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(label_2);
 
-        costumerSelection = new QListWidget(widget);
+        costumerSelection = new QListWidget(layoutWidget);
         costumerSelection->setObjectName(QString::fromUtf8("costumerSelection"));
 
         verticalLayout->addWidget(costumerSelection);
 
-        pushButton = new QPushButton(widget);
+        pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         verticalLayout->addWidget(pushButton);
@@ -84,7 +84,7 @@ public:
 
     void retranslateUi(QWidget *OrderRegisterMenu)
     {
-        OrderRegisterMenu->setWindowTitle(QCoreApplication::translate("OrderRegisterMenu", "Form", nullptr));
+        OrderRegisterMenu->setWindowTitle(QCoreApplication::translate("OrderRegisterMenu", "QuickOrder", nullptr));
         label->setText(QCoreApplication::translate("OrderRegisterMenu", "Selecione a mesa do consumidor", nullptr));
         label_2->setText(QCoreApplication::translate("OrderRegisterMenu", "Consumidores cadastrados", nullptr));
         pushButton->setText(QCoreApplication::translate("OrderRegisterMenu", "Voltar", nullptr));

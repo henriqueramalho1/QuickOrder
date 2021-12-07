@@ -25,7 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_CostumerRegisterMenu
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
@@ -46,20 +46,20 @@ public:
         if (CostumerRegisterMenu->objectName().isEmpty())
             CostumerRegisterMenu->setObjectName(QString::fromUtf8("CostumerRegisterMenu"));
         CostumerRegisterMenu->resize(400, 300);
-        widget = new QWidget(CostumerRegisterMenu);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 381, 271));
-        verticalLayout_2 = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(CostumerRegisterMenu);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 381, 271));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         horizontalLayout->addWidget(label);
 
-        nameInput = new QLineEdit(widget);
+        nameInput = new QLineEdit(layoutWidget);
         nameInput->setObjectName(QString::fromUtf8("nameInput"));
 
         horizontalLayout->addWidget(nameInput);
@@ -69,12 +69,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        tableSelect = new QSpinBox(widget);
+        tableSelect = new QSpinBox(layoutWidget);
         tableSelect->setObjectName(QString::fromUtf8("tableSelect"));
 
         horizontalLayout_2->addWidget(tableSelect);
@@ -84,13 +84,13 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        status = new QLabel(widget);
+        status = new QLabel(layoutWidget);
         status->setObjectName(QString::fromUtf8("status"));
         status->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_3->addWidget(status);
 
-        modStatus = new QLabel(widget);
+        modStatus = new QLabel(layoutWidget);
         modStatus->setObjectName(QString::fromUtf8("modStatus"));
         modStatus->setAlignment(Qt::AlignCenter);
 
@@ -101,17 +101,17 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        costumerWidget = new QListWidget(widget);
+        costumerWidget = new QListWidget(layoutWidget);
         costumerWidget->setObjectName(QString::fromUtf8("costumerWidget"));
 
         verticalLayout->addWidget(costumerWidget);
 
-        registerButton = new QPushButton(widget);
+        registerButton = new QPushButton(layoutWidget);
         registerButton->setObjectName(QString::fromUtf8("registerButton"));
 
         verticalLayout->addWidget(registerButton);
 
-        backButton = new QPushButton(widget);
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         verticalLayout->addWidget(backButton);
@@ -127,7 +127,7 @@ public:
 
     void retranslateUi(QWidget *CostumerRegisterMenu)
     {
-        CostumerRegisterMenu->setWindowTitle(QCoreApplication::translate("CostumerRegisterMenu", "Form", nullptr));
+        CostumerRegisterMenu->setWindowTitle(QCoreApplication::translate("CostumerRegisterMenu", "QuickOrder", nullptr));
         label->setText(QCoreApplication::translate("CostumerRegisterMenu", "Nome do Consumidor", nullptr));
         nameInput->setPlaceholderText(QCoreApplication::translate("CostumerRegisterMenu", "Nome", nullptr));
         label_2->setText(QCoreApplication::translate("CostumerRegisterMenu", "Mesa", nullptr));

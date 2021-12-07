@@ -36,7 +36,7 @@ public:
     QLineEdit *ingredientInput_5;
     QPushButton *registerButton;
     QPushButton *backButton;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
@@ -100,21 +100,21 @@ public:
 
         verticalLayout->addWidget(backButton);
 
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 20, 341, 26));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget1 = new QWidget(frame);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(20, 20, 341, 26));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget1);
         label->setObjectName(QString::fromUtf8("label"));
         label->setAlignment(Qt::AlignCenter);
 
         horizontalLayout->addWidget(label);
 
-        nameInput = new QLineEdit(widget);
+        nameInput = new QLineEdit(layoutWidget1);
         nameInput->setObjectName(QString::fromUtf8("nameInput"));
 
         horizontalLayout->addWidget(nameInput);
@@ -122,7 +122,7 @@ public:
 
         horizontalLayout_2->addLayout(horizontalLayout);
 
-        doubleSpinBox = new QDoubleSpinBox(widget);
+        doubleSpinBox = new QDoubleSpinBox(layoutWidget1);
         doubleSpinBox->setObjectName(QString::fromUtf8("doubleSpinBox"));
 
         horizontalLayout_2->addWidget(doubleSpinBox);
@@ -135,7 +135,7 @@ public:
 
     void retranslateUi(QWidget *ProductRegisterMenu)
     {
-        ProductRegisterMenu->setWindowTitle(QCoreApplication::translate("ProductRegisterMenu", "Form", nullptr));
+        ProductRegisterMenu->setWindowTitle(QCoreApplication::translate("ProductRegisterMenu", "QuickOrder", nullptr));
         label_2->setText(QCoreApplication::translate("ProductRegisterMenu", "Ingredientes", nullptr));
         ingredientInput->setText(QString());
         ingredientInput->setPlaceholderText(QCoreApplication::translate("ProductRegisterMenu", "Ingrediente 1", nullptr));

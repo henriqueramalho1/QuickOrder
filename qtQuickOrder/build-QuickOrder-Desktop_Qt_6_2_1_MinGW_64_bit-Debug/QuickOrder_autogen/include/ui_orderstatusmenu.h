@@ -22,7 +22,7 @@ QT_BEGIN_NAMESPACE
 class Ui_OrderStatusMenu
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QTableWidget *orderWidget;
     QPushButton *backButton;
@@ -34,13 +34,13 @@ public:
         if (OrderStatusMenu->objectName().isEmpty())
             OrderStatusMenu->setObjectName(QString::fromUtf8("OrderStatusMenu"));
         OrderStatusMenu->resize(624, 346);
-        widget = new QWidget(OrderStatusMenu);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 601, 321));
-        gridLayout = new QGridLayout(widget);
+        layoutWidget = new QWidget(OrderStatusMenu);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 601, 321));
+        gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        orderWidget = new QTableWidget(widget);
+        orderWidget = new QTableWidget(layoutWidget);
         if (orderWidget->columnCount() < 6)
             orderWidget->setColumnCount(6);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
@@ -71,17 +71,17 @@ public:
 
         gridLayout->addWidget(orderWidget, 0, 0, 1, 3);
 
-        backButton = new QPushButton(widget);
+        backButton = new QPushButton(layoutWidget);
         backButton->setObjectName(QString::fromUtf8("backButton"));
 
         gridLayout->addWidget(backButton, 1, 0, 1, 1);
 
-        updateStatusButton = new QPushButton(widget);
+        updateStatusButton = new QPushButton(layoutWidget);
         updateStatusButton->setObjectName(QString::fromUtf8("updateStatusButton"));
 
         gridLayout->addWidget(updateStatusButton, 1, 1, 1, 1);
 
-        cancelOrderButton = new QPushButton(widget);
+        cancelOrderButton = new QPushButton(layoutWidget);
         cancelOrderButton->setObjectName(QString::fromUtf8("cancelOrderButton"));
 
         gridLayout->addWidget(cancelOrderButton, 1, 2, 1, 1);
@@ -94,7 +94,7 @@ public:
 
     void retranslateUi(QWidget *OrderStatusMenu)
     {
-        OrderStatusMenu->setWindowTitle(QCoreApplication::translate("OrderStatusMenu", "Form", nullptr));
+        OrderStatusMenu->setWindowTitle(QCoreApplication::translate("OrderStatusMenu", "QuickOrder", nullptr));
         QTableWidgetItem *___qtablewidgetitem = orderWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("OrderStatusMenu", "Id", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = orderWidget->horizontalHeaderItem(1);

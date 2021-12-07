@@ -17,18 +17,20 @@ ProductRegisterMenu::~ProductRegisterMenu(){
 void ProductRegisterMenu::on_registerButton_clicked()
 {
     QString productName = ui->nameInput->text();
-    double price;
+    double price = ui->doubleSpinBox->value();
     QString ingredient1 = ui->ingredientInput->text();
     QString ingredient2 = ui->ingredientInput_2->text();
     QString ingredient3 = ui->ingredientInput_3->text();
     QString ingredient4 = ui->ingredientInput_4->text();
     QString ingredient5 = ui->ingredientInput_5->text();
 
-    if(productName == "" || ingredient1 == "")
+    if(productName == "" || ingredient1 == "" || price == 0.0)
     {
         QMessageBox::warning(this,"", "Não é possível cadastrar esse produto, verifique os campos");
         return;
     }
+
+    std::cout << price << std::endl;
 
     addToDatabase(productName, price, ingredient1, ingredient2, ingredient3, ingredient4, ingredient5);
 

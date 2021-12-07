@@ -126,7 +126,7 @@ void BillMenu::loadOrders(QString costumer_id)
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 2, TQnt);
 
             QTableWidgetItem* TPrice = new QTableWidgetItem();
-            TPrice->setText(QString(query.value(5).toString()));
+            TPrice->setText("R$"+QString(query.value(5).toString()));
             ui->orderWidget->setItem(ui->orderWidget->rowCount()-1, 3, TPrice);
 
             QTableWidgetItem* TObs = new QTableWidgetItem();
@@ -192,6 +192,20 @@ void BillMenu::on_billButton_clicked()
     painter.end();
 
     QMessageBox::information(this, "", "Conta gerada com sucesso.");
+
+
+    QSqlQuery deleteQuery;
+
+    deleteQuery.prepare("delete from order_tb where costumer_id = "+costumer_id);
+    deleteQuery.exec();
+
+
+    deleteQuery.prepare("delete from costumer_tb where id = "+costumer_id);
+    deleteQuery.exec();
+
+    loadCostumers(ui->tableSelection->currentText());
+    loadOrders(costumer_id);
+
 }
 
 
